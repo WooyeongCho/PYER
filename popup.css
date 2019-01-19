@@ -32,8 +32,15 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
   border-radius: 100%;
   position: absolute;
-  right: 10px;
   top: 10px;
+}
+
+#githubLink {
+  right: 10px;
+}
+
+#shopLink {
+  right: 50px;
 }
 
 .mButton i {

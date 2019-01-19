@@ -1,9 +1,15 @@
+const github = "https://github.com/WooyeongCho/Pyer";
+
 $(document).ready(function(){
   $('select').formSelect();
   $('.tooltipped').tooltip();
 
   chrome.storage.sync.get(['enabled'], function(result) {
     $('#es').prop('checked', result.enabled);
+  });
+
+  $('#githubLink').click(function () {
+    chrome.tabs.create({"url": github})
   });
 
   $('#save').click(function () {
