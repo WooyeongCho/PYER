@@ -1,0 +1,25 @@
+{
+  "name": "Pyer",
+  "version": "1.0",
+  "description": "엔트리 만들기 페이지에 CSS 테마를 적용시킵니다.",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "<all_urls>",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "images/logo_32.png",
+    "default_title": "Pyer",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "32": "images/logo_32.png",
+    "128": "images/logo_128.png"
+  }
+}

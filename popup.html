@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css">
+    <script src="jquery-3.3.1.js"></script>
+    <script src="materialize.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div class="navbar-fixed">
+      <nav class="nav-extended #212121 grey darken-4" style="padding-left: 10px; padding-right: 10px;">
+        <h5 class="inline m">PYER</h5>
+        <span class="inline">CSS로 엔트리를 꾸며보세요</span>
+        <a class="waves-effect waves-light mButton">
+          <i class="material-icons center" style="horizontal-align:middle;">shop</i>
+        </a>
+      </nav>
+    </div>
+    <br />
+    <br />
+    <div id="contents">
+      <div class="switch tooltipped" data-position="bottom" data-tooltip="테마 활성화 상태를 설정합니다.">
+        <label>
+          비활성화
+          <input type="checkbox" id="es">
+          <span class="lever"></span>
+          활성화
+        </label>
+      </div>
+      <br />
+      <br />
+
+      <div class="input-field">
+        <select>
+          <option value="1">[기본 제공] 어두운 테마</option>
+          <option value="2">외부 테마</option>
+        </select>
+        <label>테마 선택하기</label>
+      </div>
+
+      <div class="btn waves-effect waves-light tooltipped" data-position="right" data-tooltip="설정 내용을 저장합니다." id="save">저장
+        <i class="material-icons right">save</i>
+      </div>
+    </div>
+  </body>
+</html>
