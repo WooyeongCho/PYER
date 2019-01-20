@@ -32,3 +32,7 @@ div.entryWorkspaceBoard {
   background-size: 100px 100px;
   border: 0px;
 }
+
+div.rcs-inner-container {
+  background-color: #232323;
+}
