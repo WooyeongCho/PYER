@@ -1,0 +1,29 @@
+header.common_gnb { /* 맨 위에 있는 툴바 */
+  background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+}
+
+div.entryScene { /* 엔트리 장면 */
+  background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+}
+
+
+div.engineContainer { /* 왼쪽 패널(미리보기 화면, 오브젝트 선택 창) */
+  background-color: #0F2027;
+}
+
+div.entryPlaygroundWorkspace { /* 블록 조립소 */
+  background-color: #0F2027;
+}
+
+div.entryPlaygroundTabWorkspace { /* 탭 패널(블록, 모양, 소리, 속성 등) */
+  background-color: #ffffff00;
+}
+
+div.entryPlaygroundButtonTabWorkspace {
+  background-color: #ffffff00
+}
+
+div.btn_work_space {
+  background-color: #232323;
+  border: 1px solid #ffffff;
+}

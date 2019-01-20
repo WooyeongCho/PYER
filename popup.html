@@ -37,19 +37,23 @@
       <br />
 
       <div class="input-field">
-        <select>
+        <select id="ts">
           <option value="1">[기본 제공] 어두운 테마</option>
-          <option value="2">외부 테마</option>
+          <option value="2">[기본 제공] 달빛 테마</option>
+          <option value="3">외부 테마</option>
         </select>
         <label>테마 선택하기</label>
+      </div>
+
+      <div class="btn waves-effect waves-light #212121 grey darken-4" id="save">저장
+        <i class="material-icons right">save</i>
       </div>
 
       <div class="btn waves-effect waves-light #212121 grey darken-4" id="upload">외부 CSS 테마 불러오기
         <i class="material-icons right">file_upload</i>
       </div>
-      <div class="btn waves-effect waves-light #212121 grey darken-4" id="save">저장
-        <i class="material-icons right">save</i>
-      </div>
+
+      <p id="filePath">선택된 파일 : </p>
 
       <input id="file-input" type="file" accept=".css" name="name" style="display: none;" />
     </div>

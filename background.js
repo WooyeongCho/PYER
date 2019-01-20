@@ -17,11 +17,15 @@ function codes() {
     let url = tabs[0].url;
 
     if(url.startsWith("https://playentry.org/ws")) {
-      chrome.storage.sync.get(['enabled'], function(result) {
-        if(result.enabled) {
-          inject("default_theme/def_dark.css");
+      chrome.storage.sync.get(['enabled', 'selectedTheme'], function(result) {
+        if(result.selectedTheme) {
+          if(result.selectedTheme == 1) {
+            inject("default_theme/def_dark.css");
+          } else if (result.selectedTheme == 2) {
+            inject("default_theme/def_moonlight.css");
+          }
         }
-      });    
+      });
     }
   });
 }
