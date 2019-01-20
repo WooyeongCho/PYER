@@ -27,11 +27,9 @@ $(document).ready(function(){
 
   $('#upload').on('click', function() {
     $('#file-input').trigger('click');
-
   });
 
   $( "#file-input" ).change(function(event) {
-
   });
 
   $('#save').click(function () {
