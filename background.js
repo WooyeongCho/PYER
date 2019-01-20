@@ -19,6 +19,7 @@ function codes() {
     if(url.startsWith("https://playentry.org/ws")) {
       chrome.storage.sync.get(['enabled', 'selectedTheme'], function(result) {
         if(result.enabled) {
+          chrome.tabs.executeScript({file: "water.js"});
           if(result.selectedTheme) {
             if(result.selectedTheme == 1) {
               inject("default_theme/def_dark.css");
