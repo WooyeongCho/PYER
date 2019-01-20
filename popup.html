@@ -14,12 +14,12 @@
       <nav class="nav-extended #212121 grey darken-4" style="padding-left: 10px; padding-right: 10px;">
         <h5 class="inline m">PYER</h5>
         <span class="inline">CSS로 엔트리를 꾸며보세요</span>
-        <a class="waves-effect waves-light mButton" id="shopLink">
+        <div class="waves-effect waves-light mButton" id="shopLink">
           <i class="material-icons center" style="">shop</i>
-        </a>
-        <a class="waves-effect waves-light mButton" id="githubLink">
+        </div>
+        <div class="waves-effect waves-light mButton" id="githubLink">
           <i class="material-icons center" style="">code</i>
-        </a>
+        </div>
       </nav>
     </div>
     <br />
@@ -44,9 +44,14 @@
         <label>테마 선택하기</label>
       </div>
 
-      <div class="btn waves-effect waves-light tooltipped" data-position="right" data-tooltip="설정 내용을 저장합니다." id="save">저장
+      <div class="btn waves-effect waves-light #212121 grey darken-4" id="upload">외부 CSS 테마 불러오기
+        <i class="material-icons right">file_upload</i>
+      </div>
+      <div class="btn waves-effect waves-light #212121 grey darken-4" id="save">저장
         <i class="material-icons right">save</i>
       </div>
+
+      <input id="file-input" type="file" accept=".css" name="name" style="display: none;" />
     </div>
   </body>
 </html>

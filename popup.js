@@ -12,6 +12,10 @@ $(document).ready(function(){
     chrome.tabs.create({"url": github})
   });
 
+  $('#upload').on('click', function() {
+    $('#file-input').trigger('click');
+  });
+
   $('#save').click(function () {
     let isEnabled = $('#es').prop('checked');
     chrome.storage.sync.set({'enabled': isEnabled});
