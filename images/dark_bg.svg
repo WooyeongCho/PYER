@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" style=""><rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none"/>
+    <defs>
+        <path id="a" d="M0 0h48v48H0z"/>
+    </defs>
+    
+<g class="currentLayer" style=""><title>Layer 1</title>
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a" id="svg_2"/>
+        </mask>
+        <use fill="#F7FCFF" fill-rule="nonzero" xlink:href="#a" id="svg_3" class=""/><rect fill="#242424" stroke-dashoffset="" fill-rule="nonzero" id="svg_65" x="0" y="0" width="48" height="48" style="color: rgb(0, 0, 0);" class="" fill-opacity="1"/>
+        <g fill-rule="nonzero" mask="url(#b)" id="svg_4" opacity="1" class="" fill="#ffffff" fill-opacity="1">
+            <g id="svg_5" opacity="1" fill="#ffffff" fill-opacity="1">
+                <circle cx="0" cy="8" r="1" fill="#ffffff" id="svg_6" opacity="1" fill-opacity="1"/>
+                <circle cx="8" cy="8" r="1" fill="#ffffff" id="svg_7" opacity="1" fill-opacity="1"/>
+                <circle cx="16" cy="8" r="1" fill="#ffffff" id="svg_8" opacity="1" fill-opacity="1"/>
+                <circle cx="24" cy="8" r="1" fill="#ffffff" id="svg_9" opacity="1" fill-opacity="1"/>
+                <circle cx="32" cy="8" r="1" fill="#ffffff" id="svg_10" opacity="1" fill-opacity="1"/>
+                <circle cx="40" cy="8" r="1" fill="#ffffff" id="svg_11" opacity="1" fill-opacity="1"/>
+                <circle cx="0" cy="16" r="1" fill="#ffffff" id="svg_12" opacity="1" fill-opacity="1"/>
+                <circle cx="8" cy="16" r="1" fill="#ffffff" id="svg_13" opacity="1" fill-opacity="1"/>
+                <circle cx="16" cy="16" r="1" fill="#ffffff" id="svg_14" opacity="1" fill-opacity="1"/>
+                <circle cx="24" cy="16" r="1" fill="#ffffff" id="svg_15" opacity="1" fill-opacity="1"/>
+                <circle cx="32" cy="16" r="1" fill="#ffffff" id="svg_16" opacity="1" fill-opacity="1"/>
+                <circle cx="40" cy="16" r="1" fill="#ffffff" id="svg_17" opacity="1" fill-opacity="1"/>
+                <circle cx="0" cy="16" r="1" fill="#ffffff" id="svg_18" opacity="1" fill-opacity="1"/>
+                <circle cx="8" cy="16" r="1" fill="#ffffff" id="svg_19" opacity="1" fill-opacity="1"/>
+                <circle cx="16" cy="16" r="1" fill="#ffffff" id="svg_20" opacity="1" fill-opacity="1"/>
+                <circle cx="24" cy="16" r="1" fill="#ffffff" id="svg_21" opacity="1" fill-opacity="1"/>
+                <circle cx="32" cy="16" r="1" fill="#ffffff" id="svg_22" opacity="1" fill-opacity="1"/>
+                <circle cx="40" cy="16" r="1" fill="#ffffff" id="svg_23" opacity="1" fill-opacity="1"/>
+                <circle cx="0" cy="24" r="1" fill="#ffffff" id="svg_24" opacity="1" fill-opacity="1"/>
+                <circle cx="8" cy="24" r="1" fill="#ffffff" id="svg_25" opacity="1" fill-opacity="1"/>
+                <circle cx="16" cy="24" r="1" fill="#ffffff" id="svg_26" opacity="1" fill-opacity="1"/>
+                <circle cx="24" cy="24" r="1" fill="#ffffff" id="svg_27" opacity="1" fill-opacity="1"/>
+                <circle cx="32" cy="24" r="1" fill="#ffffff" id="svg_28" opacity="1" fill-opacity="1"/>
+                <circle cx="40" cy="24" r="1" fill="#ffffff" id="svg_29" opacity="1" fill-opacity="1"/>
+                <circle cx="0" cy="32" r="1" fill="#ffffff" id="svg_30" opacity="1" fill-opacity="1"/>
+                <circle cx="8" cy="32" r="1" fill="#ffffff" id="svg_31" opacity="1" fill-opacity="1"/>
+                <circle cx="16" cy="32" r="1" fill="#ffffff" id="svg_32" opacity="1" fill-opacity="1"/>
+                <circle cx="24" cy="32" r="1" fill="#ffffff" id="svg_33" opacity="1" fill-opacity="1"/>
+                <circle cx="32" cy="32" r="1" fill="#ffffff" id="svg_34" opacity="1" fill-opacity="1"/>
+                <circle cx="40" cy="32" r="1" fill="#ffffff" id="svg_35" opacity="1" fill-opacity="1"/>
+                <circle cx="0" cy="40" r="1" fill="#ffffff" id="svg_36" opacity="1" fill-opacity="1"/>
+                <circle cx="8" cy="40" r="1" fill="#ffffff" id="svg_37" opacity="1" fill-opacity="1"/>
+                <circle cx="16" cy="40" r="1" fill="#ffffff" id="svg_38" opacity="1" fill-opacity="1"/>
+                <circle cx="24" cy="40" r="1" fill="#ffffff" id="svg_39" opacity="1" fill-opacity="1"/>
+                <circle cx="32" cy="40" r="1" fill="#ffffff" id="svg_40" opacity="1" fill-opacity="1"/>
+                <circle cx="40" cy="40" r="1" fill="#ffffff" id="svg_41" opacity="1" fill-opacity="1"/>
+                <circle cx="0" cy="48" r="1" fill="#ffffff" id="svg_42" opacity="1" fill-opacity="1"/>
+            </g>
+        </g>
+        <circle r="1" fill="#ffffff" fill-rule="nonzero" mask="url(#b)" id="svg_43" opacity="1" class="selected" fill-opacity="1"/>
+        <circle cx="8" r="1" fill="#ffffff" fill-rule="nonzero" mask="url(#b)" id="svg_44" opacity="1" class="selected" fill-opacity="1"/>
+        <circle cx="16" r="1" fill="#ffffff" fill-rule="nonzero" mask="url(#b)" id="svg_45" opacity="1" class="selected" fill-opacity="1"/>
+        <circle cx="24" r="1" fill="#ffffff" fill-rule="nonzero" mask="url(#b)" id="svg_46" opacity="1" class="selected" fill-opacity="1"/>
+        <circle cx="32" r="1" fill="#ffffff" fill-rule="nonzero" mask="url(#b)" id="svg_47" opacity="1" class="selected" fill-opacity="1"/>
+        <circle cx="40" r="1" fill="#ffffff" fill-rule="nonzero" mask="url(#b)" id="svg_48" opacity="1" class="" fill-opacity="1"/>
+        <circle cx="48" r="1" fill="#dadada" fill-rule="nonzero" mask="url(#b)" id="svg_49" opacity="1" class="" fill-opacity="1"/><circle cx="48" r="1" fill="#ffffff" fill-rule="nonzero" mask="url(#b)" opacity="1" class="selected" id="svg_1" cy="0" fill-opacity="1"/>
+        <circle cx="48" cy="8" r="1" fill="#ffffff" fill-rule="nonzero" mask="url(#b)" id="svg_50" opacity="1" class="selected" fill-opacity="1"/>
+        <circle cx="48" cy="16" r="1" fill="#dadada" fill-rule="nonzero" mask="url(#b)" id="svg_51" opacity="1" class="" fill-opacity="1"/>
+        <circle cx="48" cy="16" r="1" fill="#ffffff" fill-rule="nonzero" mask="url(#b)" id="svg_52" opacity="1" class="selected" fill-opacity="1"/>
+        <circle cx="48" cy="24" r="1" fill="#ffffff" fill-rule="nonzero" mask="url(#b)" id="svg_53" opacity="1" class="selected" fill-opacity="1"/>
+        <circle cx="48" cy="32" r="1" fill="#ffffff" fill-rule="nonzero" mask="url(#b)" id="svg_54" opacity="1" class="selected" fill-opacity="1"/>
+        <circle cx="48" cy="40" r="1" fill="#ffffff" fill-rule="nonzero" mask="url(#b)" id="svg_55" opacity="1" class="selected" fill-opacity="1"/>
+        <circle cx="8" cy="48" r="1" fill="#ffffff" fill-rule="nonzero" mask="url(#b)" id="svg_56" opacity="1" class="selected" fill-opacity="1"/>
+        <circle cx="16" cy="48" r="1" fill="#ffffff" fill-rule="nonzero" mask="url(#b)" id="svg_57" opacity="1" class="selected" fill-opacity="1"/>
+        <circle cx="24" cy="48" r="1" fill="#ffffff" fill-rule="nonzero" mask="url(#b)" id="svg_58" opacity="1" class="selected" fill-opacity="1"/>
+        <circle cx="32" cy="48" r="1" fill="#ffffff" fill-rule="nonzero" mask="url(#b)" id="svg_59" opacity="1" class="selected" fill-opacity="1"/>
+        <circle cx="40" cy="48" r="1" fill="#ffffff" fill-rule="nonzero" mask="url(#b)" id="svg_60" opacity="1" class="selected" fill-opacity="1"/>
+        <circle cx="48" cy="48" r="1" fill="#ffffff" fill-rule="nonzero" mask="url(#b)" id="svg_61" opacity="1" class="selected" fill-opacity="1"/>
+    </g></svg>

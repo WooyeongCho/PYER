@@ -22,7 +22,13 @@ div.entryPlaygroundButtonTabWorkspace {
   background-color: #ffffff00
 }
 
-div.btn_work_space {
+a.btn_work_space {
   background-color: #232323;
   border: 1px solid #ffffff;
+}
+
+div.entryWorkspaceBoard {
+  background-image: url('https://svgshare.com/i/Adn.svg');
+  background-size: 100px 100px;
+  border: 0px;
 }

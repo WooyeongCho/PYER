@@ -9,7 +9,7 @@ body{
   margin: 0;
 }
 
-p, span {
+* {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 15px;
 }
@@ -53,17 +53,6 @@ h1, h2, h3, h4, h5, h6 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) }
-}
-
-.switch label input[type=checkbox]:checked+.lever {
-    background-color: #FF5252 !important;
-}
-.switch label input[type=checkbox]:checked+.lever {
-  background-color: #565656;
-}
-
-.switch label input[type=checkbox]:checked+.lever:after {
-  background-color: #212121;
 }
 
 ::selection { background-color: #adccff; }

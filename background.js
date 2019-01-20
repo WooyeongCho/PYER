@@ -18,13 +18,15 @@ function codes() {
 
     if(url.startsWith("https://playentry.org/ws")) {
       chrome.storage.sync.get(['enabled', 'selectedTheme'], function(result) {
-        if(result.selectedTheme) {
-          if(result.selectedTheme == 1) {
-            inject("default_theme/def_dark.css");
-          } else if (result.selectedTheme == 2) {
-            inject("default_theme/def_moonlight.css");
+        if(result.enabled) {
+          if(result.selectedTheme) {
+            if(result.selectedTheme == 1) {
+              inject("default_theme/def_dark.css");
+            } else if (result.selectedTheme == 2) {
+              inject("default_theme/def_moonlight.css");
+            }
           }
-        }
+        }    
       });
     }
   });
