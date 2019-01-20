@@ -19,7 +19,7 @@ div.entryPlaygroundTabWorkspace { /* 탭 패널(블록, 모양, 소리, 속성 �
 }
 
 div.entryPlaygroundButtonTabWorkspace {
-  background-color: #ffffff00
+  background-color: #ffffff00;
 }
 
 a.btn_work_space {
@@ -35,4 +35,27 @@ div.entryWorkspaceBoard {
 
 div.rcs-inner-container {
   background-color: #232323;
+}
+
+div.blockMenuContainer {
+  background-color: #232323;
+  border: 1px solid black;
+}
+
+ul.entryCategoryListWorkspace {
+  background-color: #232323;
+}
+
+div.entryWorkspaceBlockMenu {
+  background-color: black;
+}
+
+li.entryCategoryElementWorkspace:not(.entrySelectedCategory) {
+  background-color: #232323 !important;
+  color: #aaaaaa;
+  border: 1px solid black;
+}
+
+ul.entryCategoryListWorkspace:before {
+  border: 1px solid black;
 }
