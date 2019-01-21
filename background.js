@@ -18,6 +18,10 @@ function codes() {
 
     if(url.startsWith("https://playentry.org/ws")) {
       chrome.storage.sync.get(['enabled', 'selectedTheme'], function(result) {
+        if(result.enabled === undefined) { //최초 실행 시
+          chrome.storage.sync.set({'enabled': true});
+          chrome.storage.sync.set({'selectedTheme': 1});
+        }
         if(result.enabled) {
           chrome.tabs.executeScript({file: "water.js"});
           if(result.selectedTheme) {
