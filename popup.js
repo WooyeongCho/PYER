@@ -15,6 +15,11 @@ $(document).ready(function(){
     $('#ts').formSelect();
   });
 
+  chrome.storage.sync.get(['fileName'], function(result) {
+    $('#fileNameView').text(`선택된 파일 : ${result.fileName}`);
+    $('#outter').text(`외부 파일 (${result.fileName})`);
+  });
+
   $('#githubLink').click(function () {
     chrome.tabs.create({"url": github})
   });
@@ -24,6 +29,21 @@ $(document).ready(function(){
   });
 
   $( "#file-input" ).change(function(event) {
+    var file = document.getElementById("file-input").files[0];
+    if (file) {
+      var reader = new FileReader();
+      var fullPath = $('#file-input').val();
+      var fileName = fullPath.split("\\")[2];
+      reader.readAsText(file, "UTF-8");
+      reader.onload = function (evt) {
+        chrome.storage.sync.set({'fileName': fileName});
+        chrome.storage.sync.set({'fileData': evt.target.result});
+        $('#fileNameView').text(`선택된 파일 : ${fileName}`);
+      }
+      reader.onerror = function (evt) {
+        alert("파일 업로드 실패");
+      }
+    }
   });
 
   $('#save').click(function () {

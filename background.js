@@ -27,10 +27,8 @@ function codes() {
           if(result.selectedTheme) {
             if(result.selectedTheme == 1) {
               inject("default_theme/def_dark.css");
-            } else if (result.selectedTheme == 2) {
-              inject("default_theme/def_moonlight.css");
             } else {
-              inject("file:///G:/test.css");
+              readTextFile("file:///G:/test.css");
             }
           }
         }
