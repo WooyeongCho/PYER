@@ -1,12 +1,6 @@
 const github = "https://github.com/WooyeongCho/Pyer";
 
 /* 최초 실행 시 storage 값 설정 */
-chrome.storage.sync.get(['enabled', 'selectedTheme'], function(result) {
-  if(result.enabled === undefined) {
-    chrome.storage.sync.set({'enabled': true});
-    chrome.storage.sync.set({'selectedTheme': 1});
-  }
-});
 
 $(document).ready(function(){
   $('select').formSelect();
