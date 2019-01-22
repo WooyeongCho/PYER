@@ -8,31 +8,36 @@ chrome.tabs.onActivated.addListener(function (tt) {
   codes();
 });
 
-function inject(path) {
-  chrome.tabs.insertCSS({file: path});
+function inject(path, type) {
+  if(type == "file") {
+    chrome.tabs.insertCSS({file: path});
+  } else {
+    chrome.tabs.insertCSS({code: path});
+  }
 }
 
 function codes() {
   chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
     let url = tabs[0].url;
-
-    if(url.startsWith("https://playentry.org/ws")) {
-      chrome.storage.sync.get(['enabled', 'selectedTheme'], function(result) {
-        if(result.enabled === undefined) { //최초 실행 시
+      chrome.storage.sync.get(['enabled', 'selectedTheme', 'fileData', 'plzClick'], function(result) {
+        if(result.enabled == undefined) { //최초 실행 시
           chrome.storage.sync.set({'enabled': true});
           chrome.storage.sync.set({'selectedTheme': 1});
+          chrome.storage.sync.set({'plzClick': true});
         }
         if(result.enabled) {
+          if(url.startsWith("https://playentry.org/ws")) {
           chrome.tabs.executeScript({file: "water.js"});
           if(result.selectedTheme) {
             if(result.selectedTheme == 1) {
-              inject("default_theme/def_dark.css");
+              inject("default_theme/def_dark.css", "file");
             } else {
-              readTextFile("file:///G:/test.css");
+              let code = result.fileData;
+              inject(code, "code");
             }
           }
         }
+      }
       });
-    }
   });
 }

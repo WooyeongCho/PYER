@@ -5,13 +5,47 @@
 
 body{
   width: 370px;
-  height: 320px;
+  height: 330px;
   margin: 0;
+}
+
+
+.sb {
+  position: absolute;
+	background-color: #212121;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+  padding-left: 10px;
+  padding-right: 20px;
+  height: 50px;
+}
+
+.sb > p {
+  color: white;
+}
+
+.sb > .sbClose {
+  color: white;
+  font-size: 15px;
+  position: relative;
+  top: -40px;
+  left: 100%;
+}
+
+.sb::after {
+  content:'';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-bottom: solid 10px #212121;
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
 }
 
 * {
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,6 +66,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 5px;
 }
 
+#guideTitle {
+  margin-left: 50px !important;
+}
+
 .mButton {
   width: 40px;
   height: 40px;
@@ -46,6 +84,16 @@ h1, h2, h3, h4, h5, h6 {
 
 #shopLink {
   right: 50px;
+}
+
+#helpButton {
+  right: 90px;
+}
+
+.textLink {
+  font-weight: bold;
+  color: blue;
+  cursor: pointer;
 }
 
 .mButton i {
