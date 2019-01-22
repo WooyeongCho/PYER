@@ -3,20 +3,17 @@ let t = "";
 /* 최초 실행 시 storage 값 설정 */
 
 $(document).ready(function(){
-  $('select').formSelect();
-  $('.tooltipped').tooltip();
-  $('.collapsible').collapsible();
 
-  chrome.storage.sync.get(['enabled'], function(result) {
+  chrome.storage.sync.get(['enabled', 'selectedTheme', 'fileName', 'plzClick'], function(result) {
+    if(result.enabled === undefined) { //최초 실행 시
+      chrome.storage.sync.set({'enabled': true});
+      chrome.storage.sync.set({'selectedTheme': 1});
+      chrome.storage.sync.set({'plzClick': true});
+      window.location.href="popup.html";
+    }
     $('#es').prop('checked', result.enabled);
-  });
-
-  chrome.storage.sync.get(['selectedTheme'], function(result) {
     $('#ts').val(result.selectedTheme);
     $('#ts').formSelect();
-  });
-
-  chrome.storage.sync.get(['fileName'], function(result) {
     if(result.fileName == undefined) {
       $('#fileNameView').text(`선택된 파일 : 없음`);
       $('#outter').text(`외부 파일 (없음)`);
@@ -24,13 +21,14 @@ $(document).ready(function(){
       $('#fileNameView').text(`선택된 파일 : ${result.fileName}`);
       $('#outter').text(`외부 파일 (${result.fileName})`);
     }
-  });
-
-  chrome.storage.sync.get(['plzClick'], function(result) {
     if(!result.plzClick) {
       $('.sb').hide();
     }
   });
+
+  $('select').formSelect();
+  $('.tooltipped').tooltip();
+  $('.collapsible').collapsible();
 
   $('#githubLink').click(function () {
     chrome.tabs.create({"url": github})
