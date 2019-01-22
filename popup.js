@@ -64,7 +64,11 @@ $(document).ready(function(){
         chrome.storage.sync.set({'fileName': fileName});
         chrome.storage.sync.set({'fileData': evt.target.result});
         $('#fileNameView').text(`선택된 파일 : ${fileName}`);
-        M.toast({html: '파일이 선택되었습니다. 테마 선택하기에서 외부 테마를 고르신 후 저장하기 버튼을 눌러주세요.', displayLength: 3000})
+        if(fileName == "wy24.css") {
+          M.toast({html: "It's me!", displayLength: 3000})
+        } else {
+          M.toast({html: '파일이 선택되었습니다. 테마 선택하기에서 외부 테마를 고르신 후 저장하기 버튼을 눌러주세요.', displayLength: 3000})
+        }
       }
       reader.onerror = function (evt) {
         alert("파일 업로드 실패");
