@@ -1,4 +1,5 @@
 const github = "https://github.com/WooyeongCho/Pyer";
+const guide = "https://docs.google.com/document/d/1Sm3SfXXWOZTk6YFBpd8EGntOPht7jpPnpEi9MJBIZNA/edit?usp=sharing";
 let t = "";
 /* 최초 실행 시 storage 값 설정 */
 
@@ -32,6 +33,10 @@ $(document).ready(function(){
 
   $('#githubLink').click(function () {
     chrome.tabs.create({"url": github})
+  });
+
+  $('#guideLink').click(function () {
+    chrome.tabs.create({"url": guide})
   });
 
   $('#helpButton').click(function () {
