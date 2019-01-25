@@ -1,0 +1,110 @@
+header.common_gnb { /* 맨 위에 있는 툴바 */
+  background-color: #3c3736;
+}
+
+div.entryScene { /* 엔트리 장면 */
+  background-color: #3c3736;
+}
+
+div.engineContainer { /* 왼쪽 패널(미리보기 화면, 오브젝트 선택 창) */
+  background-color: #3c3736;
+}
+
+div.entryPlaygroundWorkspace { /* 블록 조립소 */
+  background-color: #3c3736;
+}
+
+div.entryPlaygroundTabWorkspace { /* 탭 패널(블록, 모양, 소리, 속성 등) */
+  background-color: #3c3736;
+}
+
+div.entryPlaygroundButtonTabWorkspace {
+  background-color: #ffffff00;
+}
+
+a.btn_work_space {
+  background-color: #3c3736 !important;
+  border: 1px solid #ffffff !important;
+}
+
+ a.select_link {
+   background-color: #3c3736 !important;
+   border: 1px solid #ffffff !important;
+ }
+
+div.entryWorkspaceBoard {
+  background-image: url('https://drive.google.com/uc?export=download&id=1la-6y4U637-eBCqz3nAayqq2B3dY3vkw');
+  background-size: 100px 100px;
+  border: 0px;
+}
+
+div.rcs-inner-container {
+  background-color: #3c3736;
+}
+
+div.blockMenuContainer {
+  background-color: #3c3736;
+  border: 1px solid black;
+  filter: drop-shadow(20px 0 30px rgba(0, 0, 0, 0.5));
+}
+
+ul.entryCategoryListWorkspace {
+  background-color: #3c3736;
+}
+
+div.entryWorkspaceBlockMenu {
+  background-color: black;
+}
+
+div.propertyContent {
+  border: 0px;
+}
+
+li.entryCategoryElementWorkspace:not(.entrySelectedCategory) {
+  background-color: #3c3736 !important;
+  color: #aaaaaa;
+  border: 1px solid black;
+}
+
+ul.entryCategoryListWorkspace:before {
+  border: 1px solid black;
+}
+div.entryVariablePanelWorkspace {
+  background-color: #3c3736;
+}
+
+a.attr_link {
+  color: white !important;
+}
+
+div.unfold > a{
+  background-color: #444444 !important;
+}
+
+div.entryOverlayBoard {
+  background: rgba(0,0,0,0.5)
+}
+
+div.entryPlaygroundSoundEdit {
+  background-color: #3a3a3a;
+}
+
+span.entryPlaygroundSoundEditText {
+  color: white !important;
+}
+
+header._2OWWq-egc7teQQP7HyL9f4 {
+  background-color: #3c3736 !important;
+}
+
+div._1x2RXYa5hQqHkrlHsAjlI_ {
+  background-color: #3a3a3af0 !important;
+}
+
+div._1HR4SSimyPIq-C8Jz_Wbkm {
+  background-color: #3a3a3af0 !important;
+}
+
+div._3NH1Xc4-gMGj_Q-1Ytj8Jm > input {
+  color: white !important;
+}

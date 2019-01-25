@@ -31,6 +31,8 @@ function codes() {
           if(result.selectedTheme) {
             if(result.selectedTheme == 1) {
               inject("default_theme/def_dark.css", "file");
+            } else if (result.selectedTheme == 2) {
+              inject("default_theme/def_sepia.css", "file");
             } else {
               let code = result.fileData;
               inject(code, "code");
