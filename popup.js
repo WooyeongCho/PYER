@@ -5,6 +5,10 @@ let t = "";
 
 $(document).ready(function(){
 
+  $.getJSON('manifest.json', function(data) {
+    $('#version_text').text('v.' + data.version);
+  });
+
   chrome.storage.sync.get(['enabled', 'selectedTheme', 'fileName', 'plzClick'], function(result) {
     if(result.enabled === undefined) { //최초 실행 시
       chrome.storage.sync.set({'enabled': true});

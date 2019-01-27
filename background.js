@@ -10,9 +10,9 @@ chrome.tabs.onActivated.addListener(function (tt) {
 
 function inject(path, type) {
   if(type == "file") {
-    chrome.tabs.insertCSS({file: path});
+    chrome.tabs.insertCSS({file: path, runAt: "document_end"});
   } else {
-    chrome.tabs.insertCSS({code: path});
+    chrome.tabs.insertCSS({code: path, runAt: "document_end"});
   }
 }
 
