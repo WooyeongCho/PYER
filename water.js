@@ -10,7 +10,6 @@ function addElement () {
     para.appendChild(t);
     document.getElementsByClassName("common_gnb")[0].appendChild(para);
   }
-
 }
 
 addElement();

@@ -108,3 +108,67 @@ div._1HR4SSimyPIq-C8Jz_Wbkm {
 div._3NH1Xc4-gMGj_Q-1Ytj8Jm > input {
   color: white !important;
 }
+
+div._2cwFGEIRAFJ-2nqKus1Rd4:not(._1mwoLlWWTeIShSqFJYzXMl) {
+  color: white !important;
+}
+
+div._1lMR0fqp7yeanHNxf4EfaY {
+  background-color: #232323 !important;
+}
+
+div.CodeMirror-linenumber { /* 엔트리 파이썬 코드 라인 숫자 표시란 */
+  background-color: #444444 !important;
+}
+
+div.CodeMirror-gutters { /* 엔트리 파이썬 코드 라인 */
+  background-color: #444444 !important;
+}
+
+div.CodeMirror-scroll { /* 엔트리 파이썬 코드 */
+  background-color: #232323 !important;
+}
+
+pre.CodeMirror-line > span {
+  color: #87b8ed !important;
+}
+
+div.CodeMirror-activeline-background {
+  background-color: #373737 !important;
+}
+
+div.CodeMirror-selected {
+  background-color: #505050 !important;
+}
+
+span.cm-def {
+  color: #508ff4 !important;
+}
+
+span.cm-string {
+  color: #7fdb8f !important;
+}
+
+span.cm-number {
+  color: #e27963 !important
+}
+
+span.cm-keyword {
+  color: #af63ed !important
+}
+
+span.cm-variable {
+  color: white !important
+}
+
+span.cm-builtin {
+  color: #e27963 !important
+}
+
+span.cm-operator {
+  color: #87b8ed !important;
+}
+
+span.cm-property {
+  color: #3287ff !important
+}

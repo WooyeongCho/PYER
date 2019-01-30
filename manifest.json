@@ -1,6 +1,6 @@
 {
   "name": "Pyer",
-  "version": "1.6",
+  "version": "2.0",
   "description": "엔트리 만들기 페이지에 CSS 테마를 적용시킵니다.",
   "manifest_version": 2,
   "permissions": [
