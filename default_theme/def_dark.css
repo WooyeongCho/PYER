@@ -125,6 +125,18 @@ div.CodeMirror-gutters { /* 엔트리 파이썬 코드 라인 */
   background-color: #444444 !important;
 }
 
+._1lMR0fqp7yeanHNxf4EfaY.CFgUd1hVFDY8vvAzC39f2 ._7EufyNjB5zr-AAkFvPmoz ._3n0ptOSeQRbGa6woKCgVqs ._2cwFGEIRAFJ-2nqKus1Rd4 input[type='text'], ._1lMR0fqp7yeanHNxf4EfaY.CFgUd1hVFDY8vvAzC39f2 ._520ujOQAquKf86wvGv7rS .q51x4EBiUeegCdzHBPH5y ._2cwFGEIRAFJ-2nqKus1Rd4 input[type='text'], ._1lMR0fqp7yeanHNxf4EfaY.CFgUd1hVFDY8vvAzC39f2 ._7EufyNjB5zr-AAkFvPmoz ._3n0ptOSeQRbGa6woKCgVqs ._2cwFGEIRAFJ-2nqKus1Rd4 input[type='number'], ._1lMR0fqp7yeanHNxf4EfaY.CFgUd1hVFDY8vvAzC39f2 ._520ujOQAquKf86wvGv7rS .q51x4EBiUeegCdzHBPH5y ._2cwFGEIRAFJ-2nqKus1Rd4 input[type='number'] {
+  color: white !important;
+}
+
+._1lMR0fqp7yeanHNxf4EfaY.CFgUd1hVFDY8vvAzC39f2 ._7EufyNjB5zr-AAkFvPmoz ._3n0ptOSeQRbGa6woKCgVqs ._2cwFGEIRAFJ-2nqKus1Rd4 label, ._1lMR0fqp7yeanHNxf4EfaY.CFgUd1hVFDY8vvAzC39f2 ._520ujOQAquKf86wvGv7rS .q51x4EBiUeegCdzHBPH5y ._2cwFGEIRAFJ-2nqKus1Rd4 label {
+  color: white !important;
+}
+
+.select_link {
+  color: white !important;
+}
+
 div.CodeMirror-scroll { /* 엔트리 파이썬 코드 */
   background-color: #232323 !important;
 }
