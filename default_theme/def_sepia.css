@@ -42,11 +42,6 @@ div.rcs-inner-container {
   background-color: #3c3736;
 }
 
-div.blockMenuContainer {
-  background-color: #3c3736;
-  border: 1px solid black;
-  filter: drop-shadow(20px 0 30px rgba(0, 0, 0, 0.5));
-}
 
 ul.entryCategoryListWorkspace {
   background-color: #3c3736;
@@ -195,4 +190,75 @@ div.popup_disabled__1mwoL {
 
 div.entryCategoryListWorkspace {
   background-color: #232323
+}
+
+/* 3.0 */
+
+div.customScroll_customScroll__3sb-n {
+  background-color: #2d2d2d !important;
+}
+
+div.entryCategoryListWorkspace {
+  
+}
+
+div.popup_item__2zvYI {
+  color: #5a5a5a;
+  border-bottom: #ffffff solid 0px !important;
+}
+
+div.popup_disabled__2y-bJ {
+  color: white !important;
+}
+
+div.popup_tooltip_box__3Mrun {
+  background-color: black !important;
+  border: 1px solid black !important;
+}
+
+ul.entryPlaygroundPictureList {
+  border: 1px solid black !important;
+}
+
+ul.entryPlaygroundSoundList {
+  border: 1px solid black !important;
+}
+
+div.entryVariablePanelWorkspace {
+  border: 1px solid black !important;
+}
+
+div.blockMenuContainer {
+  background-color: #232323;
+  border: 1px solid black;
+  filter: drop-shadow(10px 0 30px rgba(0, 0, 0, 0.5));
+}
+
+li.entryContainerListElementWorkspace {
+  background-color: #232323 !important;
+}
+
+div.entryObjectRotationWrapperWorkspace {
+  background-color: #313131 !important;
+  border: 1px solid black;
+}
+
+span.entryObjectCoordinateSpanWorkspace {
+  color: white;
+}
+
+span.entryObjectDirectionSpanWorkspace {
+  color: white;
+}
+
+span.entryObjectRotateMethodLabelWorkspace {
+  color: white;
+}
+
+li.entryContainerListElementWorkspace {
+  border: 1px solid black;
+}
+
+div.rotationMethodWrapper {
+  border: 1px solid black;
 }
