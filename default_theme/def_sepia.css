@@ -24,12 +24,12 @@ div.entryPlaygroundButtonTabWorkspace {
 
 a.btn_work_space {
   background-color: #3c3736 !important;
-  border: 1px solid #ffffff !important;
+  border: 0px solid #ffffff !important;
 }
 
  a.select_link {
    background-color: #3c3736 !important;
-   border: 1px solid #ffffff !important;
+   border: 0px solid #ffffff !important;
  }
 
 div.entryWorkspaceBoard {
@@ -58,11 +58,11 @@ div.propertyContent {
 li.entryCategoryElementWorkspace:not(.entrySelectedCategory) {
   background-color: #3c3736 !important;
   color: #aaaaaa;
-  border: 1px solid black;
+  border: 0px solid black;
 }
 
 ul.entryCategoryListWorkspace:before {
-  border: 1px solid black;
+  border: 0px solid black;
 }
 div.entryVariablePanelWorkspace {
   background-color: #3c3736;
@@ -213,25 +213,24 @@ div.popup_disabled__2y-bJ {
 
 div.popup_tooltip_box__3Mrun {
   background-color: black !important;
-  border: 1px solid black !important;
+  border: 0px solid black !important;
 }
 
 ul.entryPlaygroundPictureList {
-  border: 1px solid black !important;
+  border: 0px solid black !important;
 }
 
 ul.entryPlaygroundSoundList {
-  border: 1px solid black !important;
+  border: 0px solid black !important;
 }
 
 div.entryVariablePanelWorkspace {
-  border: 1px solid black !important;
+  border: 0px solid black !important;
 }
 
 div.blockMenuContainer {
   background-color: #232323;
-  border: 1px solid black;
-  filter: drop-shadow(10px 0 30px rgba(0, 0, 0, 0.5));
+  border: 0px solid black;
 }
 
 li.entryContainerListElementWorkspace {
@@ -240,7 +239,7 @@ li.entryContainerListElementWorkspace {
 
 div.entryObjectRotationWrapperWorkspace {
   background-color: #313131 !important;
-  border: 1px solid black;
+  border: 0px solid black;
 }
 
 span.entryObjectCoordinateSpanWorkspace {
@@ -256,9 +255,9 @@ span.entryObjectRotateMethodLabelWorkspace {
 }
 
 li.entryContainerListElementWorkspace {
-  border: 1px solid black;
+  border: 0px solid black;
 }
 
 div.rotationMethodWrapper {
-  border: 1px solid black;
+  border: 0px solid black;
 }

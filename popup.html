@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="popup.css">
     <script src="jquery-3.3.1.js"></script>
     <script src="materialize.min.js"></script>
@@ -11,12 +12,9 @@
   </head>
   <body>
     <div class="navbar-fixed">
-      <nav class="nav-extended #212121 grey darken-4" style="padding-left: 10px; padding-right: 10px;">
-        <h5 class="inline m">PYER</h5>
-        <span class="inline">CSS로 엔트리를 꾸며보세요</span>
-        <div class="waves-effect waves-light mButton tooltipped" id="shopLink" data-position="bottom" data-tooltip="추후 업데이트 됩니다. 조금만 기다려주세요.">
-          <i class="material-icons center" style="">shop</i>
-        </div>
+      <nav class="nav-extended light-gray z-depth-0" style="padding-left: 10px; padding-right: 10px;">
+        <h5 class="inline m">Pyer</h5>
+        <span class="inline">엔트리 테마</span>
         <div class="waves-effect waves-light mButton" id="githubLink">
           <i class="material-icons center" style="">code</i>
         </div>
@@ -26,45 +24,54 @@
       </nav>
     </div>
     <br />
-    <div class="sb" style="left: 210px">
-      <p>클릭해보세요.</p>
-      <i class="material-icons sbClose waves-effect waves-light">close</i>
-    </div>
     <div id="contents">
 
-      <div class="switch tooltipped" data-position="bottom" data-tooltip="테마 활성화 상태를 설정합니다.">
+      <div class="switch tooltipped " data-position="bottom" data-tooltip="테마 활성화 상태를 설정합니다.">
         <label>
           비활성화
           <input type="checkbox" id="es">
-          <span class="lever"></span>
+          <span class="lever "></span>
           활성화
         </label>
       </div>
       <br />
-
+      <br />
       <div class="input-field">
         <select id="ts">
           <option value="1">[기본 제공] 어두운 테마</option>
-          <option value="2">[기본 제공] 세피아 테마</option>
+          <option value="2">[기본 제공] 개발 중인 테마</option>
           <option value="3" id="outter">외부 테마</option>
         </select>
         <label>테마 선택하기</label>
       </div>
 
-      <div class="btn waves-effect waves-light #212121 grey darken-4" id="save">저장
-        <i class="material-icons right">save</i>
+      <br />
+
+      <div class="btn waves-effect waves-light light-gray z-depth-0" id="save">  
+        <i class="material-icons center ">save</i>
       </div>
 
-      <div class="btn waves-effect waves-light #212121 grey darken-4" id="upload">외부 CSS 테마 불러오기
+      <div class="btn waves-effect waves-light light-gray z-depth-0" id="upload">CSS 불러오기
         <i class="material-icons right">file_upload</i>
       </div>
 
-      <p id="fileNameView">선택된 파일 : </p>
+      <br />
+      <br />
 
-      <p>Copyright (c) 2019 Impress Flows</p><p id="version_text">v.</p>
+      
+
+    </div>
+    <div id="wy24"></div>
+
+    <div id="footer-div" class="light-gray">
+
+      <p id="fileNameView" class="footer-text">선택된 파일 : </p>
+      
+      <p id="version_text" class="footer-text">v.</p>
+
+      <p class="footer-text">Copyright (c) 2020 Impress Flows</p>
 
       <input id="file-input" type="file" accept=".css" name="name" style="display: none;" />
     </div>
-    <div id="wy24"></div>
   </body>
 </html>
