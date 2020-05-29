@@ -32,11 +32,20 @@ function codes() {
             if(result.selectedTheme == 1) {
               inject("default_theme/def_dark.css", "file");
             } else if (result.selectedTheme == 2) {
-              inject("default_theme/def_sepia.css", "file");
+              inject("default_theme/def_mint_by_jwp0116.css", "file");
             } else {
               let code = result.fileData;
               inject(code, "code");
             }
+            inject(`button,li:not(.entryContainerListElementWorkspace),a {
+
+              transition: filter .2s;
+            }
+            
+            button:hover,li:not(.entryContainerListElementWorkspace):hover,a:hover {
+              filter: brightness(80%);
+            }
+            `, "code")
           }
         }
       }

@@ -1,34 +1,81 @@
+:root {
+  --back: #232323;
+  --mid-gray: #2d2d2d;
+  --light-gray: #383838;
+  --white-gray: #5a5a5a;
+  --more-white-gray: #838383;
+}
+
+
 header.common_gnb { /* 맨 위에 있는 툴바 */
-  background-color: #232323;
+  background-color: var(--back);
 }
 
 div.entryScene { /* 엔트리 장면 */
-  background-color: #232323;
+  background-color: var(--back);
 }
 
 div.engineContainer { /* 왼쪽 패널(미리보기 화면, 오브젝트 선택 창) */
-  background-color: #232323;
+  background-color: var(--back);
 }
 
 div.entryPlaygroundWorkspace { /* 블록 조립소 */
-  background-color: #232323;
+  background-color: var(--back);
 }
 
 div.entryPlaygroundTabWorkspace { /* 탭 패널(블록, 모양, 소리, 속성 등) */
-  background-color: #232323;
+  background-color: var(--back);
 }
 
 div.entryPlaygroundButtonTabWorkspace {
   background-color: #ffffff00;
 }
 
+div.entryObjectRotationWrapperWorkspace input,input.entryObjectNameWorkspace,input#common_srch { /* 입력 필드 */
+  background-color: var(--white-gray) !important;
+  border: 0px solid !important;
+  color: white !important;
+}
+
+span.entrySceneAddButtonWorkspace {
+  width: 20px;
+  height: 20px;
+  margin-left: 9px;
+  margin-top: 9px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSLroIjsnbTslrRfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IgoJIHk9IjBweCIgdmlld0JveD0iMCAwIDMwIDMwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMCAzMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM4MzgzODM7fQo8L3N0eWxlPgo8Zz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNSwwQzYuNzIsMCwwLDYuNzIsMCwxNWMwLDguMjgsNi43MiwxNSwxNSwxNXMxNS02LjcyLDE1LTE1QzMwLDYuNzIsMjMuMjgsMCwxNSwweiBNMjIuNSwxNi41aC02djYKCQljMCwwLjgzLTAuNjcsMS41LTEuNSwxLjVzLTEuNS0wLjY3LTEuNS0xLjV2LTZoLTZDNi42NywxNi41LDYsMTUuODMsNiwxNXMwLjY3LTEuNSwxLjUtMS41aDZ2LTZDMTMuNSw2LjY3LDE0LjE3LDYsMTUsNgoJCXMxLjUsMC42NywxLjUsMS41djZoNmMwLjgzLDAsMS41LDAuNjcsMS41LDEuNVMyMy4zMywxNi41LDIyLjUsMTYuNXoiLz4KPC9nPgo8L3N2Zz4K);
+  background-size: 20px auto;
+}
+
+div.entryObjectDeleteWorkspace {
+  border: 0px solid;
+  background-color: #00000000;
+}
+
+ul.entryTabListWorkspace li:not(.entryTabSelected) {
+  background-color: var(--mid-gray);
+  color: var(--more-white-gray);
+}
+
+li.entryTabSelected {
+  background-color: var(--light-gray);
+  color: white;
+}
+
+div.entryObjectRotationWrapperWorkspace span {
+  color: white !important;
+}
+
 a.btn_work_space {
-  background-color: #232323 !important;
+  background-color: var(--back) !important;
   border: 0px solid #ffffff !important;
 }
 
+.btn_workspace_lang.block:before {
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOSIgaGVpZ2h0PSIxOSIgdmlld0JveD0iMCAwIDE5IDE5Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPHBhdGggZmlsbD0iI0ZGRiIgc3Ryb2tlPSIjMjMyMzIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik00LjM2NCAxNi43MWwtMS4xMDUgMS4yMThjLS4wMzMuMDM1LS4wMzMuMDM1LS4wNjkuMDY4YTEgMSAwIDAgMS0xLjQxMi0uMDY4TC4zOTUgMTYuNDA0VjcuODY5bDIuMTIzIDIuMDY1TDMuOTQgOC41NTNoMTAuMzc3YTQuMDc5IDQuMDc5IDAgMCAxIDAgOC4xNThINC4zNjR6Ii8+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiMyMzIzMjMiIGQ9Ik0wIDcuMjYzaDF2Mi42ODRIMHoiLz4KICAgICAgICAgICAgPGcgZmlsbD0iI0ZGRiIgc3Ryb2tlPSIjMjMyMzIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTQuMzY0IDguNjU4TDIuNTE4IDEwLjY5LjM5NSA4LjM1MVYtLjE4NGwyLjEyMyAyLjA2NkwzLjk0LjVIMTQuMzE2YTQuMDc5IDQuMDc5IDAgMSAxIDAgOC4xNThINC4zNjR6Ii8+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==) no-repeat !important;
+}
+
  a.select_link {
-   background-color: #232323 !important;
+   background-color: var(--back) !important;
    border: 0px solid #ffffff !important;
  }
 
@@ -39,12 +86,12 @@ div.entryWorkspaceBoard {
 }
 
 div.rcs-inner-container {
-  background-color: #232323;
+  background-color: var(--back);
 }
 
 
 ul.entryCategoryListWorkspace {
-  background-color: #232323;
+  background-color: var(--back);
 }
 
 div.entryWorkspaceBlockMenu {
@@ -56,7 +103,7 @@ div.propertyContent {
 }
 
 li.entryCategoryElementWorkspace:not(.entrySelectedCategory) {
-  background-color: #232323 !important;
+  background-color: var(--back) !important;
   color: #aaaaaa;
   border: 0px solid black;
 }
@@ -65,7 +112,7 @@ ul.entryCategoryListWorkspace:before {
   border: 0px solid black;
 }
 div.entryVariablePanelWorkspace {
-  background-color: #232323;
+  background-color: var(--back);
 }
 
 a.attr_link {
@@ -89,7 +136,7 @@ span.entryPlaygroundSoundEditText {
 }
 
 header._2OWWq-egc7teQQP7HyL9f4 {
-  background-color: #232323 !important;
+  background-color: var(--back) !important;
 }
 
 div._1x2RXYa5hQqHkrlHsAjlI_ {
@@ -109,7 +156,7 @@ div._2cwFGEIRAFJ-2nqKus1Rd4:not(._1mwoLlWWTeIShSqFJYzXMl) {
 }
 
 div._1lMR0fqp7yeanHNxf4EfaY {
-  background-color: #232323 !important;
+  background-color: var(--back) !important;
 }
 
 div.CodeMirror-linenumber { /* 엔트리 파이썬 코드 라인 숫자 표시란 */
@@ -133,7 +180,7 @@ div.CodeMirror-gutters { /* 엔트리 파이썬 코드 라인 */
 }
 
 div.CodeMirror-scroll { /* 엔트리 파이썬 코드 */
-  background-color: #232323 !important;
+  background-color: var(--back) !important;
 }
 
 pre.CodeMirror-line > span {
@@ -189,7 +236,7 @@ div.popup_disabled__1mwoL {
 }
 
 div.entryCategoryListWorkspace {
-  background-color: #2d2d2d;
+  background-color: var(--mid-gray);
   border: 0px solid #000 !important;
 }
 
@@ -200,7 +247,7 @@ div.entryCategoryListWorkspace:before {
 /*3.0*/
 
 div.customScroll_customScroll__3sb-n {
-  background-color: #2d2d2d !important;
+  background-color: var(--mid-gray) !important;
 }
 
 div.entryCategoryListWorkspace {
@@ -209,12 +256,16 @@ div.entryCategoryListWorkspace {
 
 div.popup_item__2zvYI {
   /* color: #5a5a5a; */
-  color: white;
+  color: white !important;
   border-bottom: #ffffff solid 0px !important;
 }
 
-div.popup_disabled__2y-bJ {
+div.popup_item__2zvYI > a {
   color: white !important;
+}
+
+div.popup_disabled__2y-bJ {
+  color: rgb(128, 128, 128) !important;
 }
 
 div.popup_tooltip_box__3Mrun {
@@ -235,17 +286,17 @@ div.entryVariablePanelWorkspace {
 }
 
 div.blockMenuContainer {
-  background-color: #232323;
+  background-color: var(--back);
   border: 0px solid black;
   
 }
 
 li.entryContainerListElementWorkspace {
-  background-color: #232323 !important;
+  background-color: var(--back) !important;
 }
 
 div.entryObjectRotationWrapperWorkspace {
-  background-color: #313131 !important;
+  background-color: var(--light-gray) !important;
   border: 0px solid black;
 }
 
@@ -268,3 +319,4 @@ li.entryContainerListElementWorkspace {
 div.rotationMethodWrapper {
   border: 0px solid black;
 }
+

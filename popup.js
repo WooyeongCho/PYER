@@ -6,7 +6,7 @@ let t = "";
 $(document).ready(function(){
 
   $.getJSON('manifest.json', function(data) {
-    $('#version_text').text('v.' + data.version);
+    $('#version_text').text('version : ' + data.version);
   });
 
   chrome.storage.sync.get(['enabled', 'selectedTheme', 'fileName', 'plzClick'], function(result) {

@@ -1,0 +1,53 @@
+/* 민트 테마 개발자 : jwp0116 */
+/* CSS 변수 지정 (색) */
+:root {
+  --main-color: #45beac;
+
+  --light-color: #7ed1c4;
+  --light2-color: #b1e3db;
+  --light3-color: #e0f4f1;
+
+  --dark-color: #1da195;
+
+  --sub-color: #3c81ab;
+  --light-sub-color: #b7e2ef;
+}
+
+/* 헤더 색상 */
+header, .entrySceneWorkspace {
+  background-color: var(--main-color) !important;
+}
+/* 헤더 버튼들 색상 */
+.btn_work_space, .common_gnb .group_box .lang_select_box .select_link {
+  border-color: var(--light2-color) !important;
+  background-color: var(--light-color) !important;
+}
+.propertyContent {
+  border-color: var(--light2-color) !important;
+}
+/* 헤더 코딩 언어 선택 버튼 아이콘 */
+.btn_workspace_lang.block:before {
+      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOSIgaGVpZ2h0PSIxOSIgdmlld0JveD0iMCAwIDE5IDE5Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPHBhdGggZmlsbD0iI0ZGRiIgc3Ryb2tlPSIjN2VkMWM0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik00LjM2NCAxNi43MWwtMS4xMDUgMS4yMThjLS4wMzMuMDM1LS4wMzMuMDM1LS4wNjkuMDY4YTEgMSAwIDAgMS0xLjQxMi0uMDY4TC4zOTUgMTYuNDA0VjcuODY5bDIuMTIzIDIuMDY1TDMuOTQgOC41NTNoMTAuMzc3YTQuMDc5IDQuMDc5IDAgMCAxIDAgOC4xNThINC4zNjR6Ii8+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiM3ZWQxYzQiIGQ9Ik0wIDcuMjYzaDF2Mi42ODRIMHoiLz4KICAgICAgICAgICAgPGcgZmlsbD0iI0ZGRiIgc3Ryb2tlPSIjN2VkMWM0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTQuMzY0IDguNjU4TDIuNTE4IDEwLjY5LjM5NSA4LjM1MVYtLjE4NGwyLjEyMyAyLjA2NkwzLjk0LjVIMTQuMzE2YTQuMDc5IDQuMDc5IDAgMSAxIDAgOC4xNThINC4zNjR6Ii8+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==) no-repeat !important;
+}
+/* 워크 스페이스 외 몇가지 배경 색상 */
+.workspace, .entryPlaygroundWorkspace, .entryPlaygroundTabWorkspace, .entryPlaygroundButtonTabWorkspace, .entryContainerListWorkspaceWrapper {
+  background-color: var(--light3-color) !important;
+}
+/* 주석 달기 귀찮네요.. 그러므로 더이상 적지 않겠습니ㄷ.. */
+.entryTabListItemWorkspace {
+  background-color: var(--light-sub-color) !important;
+}
+.entryTabSelected {
+  background-color: var(--sub-color) !important;
+}
+
+.entryVariableAdd_box .entryVariableAddWorkspace {
+  border-color: var(--main-color) !important;
+  color: var(--main-color) !important;
+}
+.entryVariableSelectButtonWorkspace.selected div {
+  color: var(--main-color) !important;
+}
+.entryAddButtonWorkspace_w, .entryVariableSelectButtonWorkspace.selected div:after, .entryRunButtonWorkspace_w {
+  border-color: var(--main-color) !important;
+}
