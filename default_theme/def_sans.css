@@ -49,10 +49,8 @@
 }
 
 * {
-  /* font-family: 'Noto Sans KR', sans-serif !important;
-  font-weight: 500 !important; */
   font-family: 'NanumSquare' !important;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -61,10 +59,10 @@
   --dark-gray: #272727;
   --black-gray: #161616;
   --background-color: #2e2e2e;
-  --mid-gray: #2d2d2d;
+  --mid-gray: #333333;
   --light-gray: #383838;
   --white-gray: #5a5a5a;
-  --more-white-gray: #838383;
+  --more-white-gray: #a3a3a3;
   --pane-padding: 5px 42px;
 
   --object-open-button: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22.65 20.53'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23d34aff;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3E자산 2%3C/title%3E%3Cg id='레이어_2' data-name='레이어 2'%3E%3Cg id='레이어_1-2' data-name='레이어 1'%3E%3Cpath class='cls-1' d='M8.32,1.73.47,15.34a3.46,3.46,0,0,0,3,5.19H19.18a3.46,3.46,0,0,0,3-5.19L14.33,1.73A3.47,3.47,0,0,0,8.32,1.73Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -333,11 +331,17 @@ div.entryObjectRotationWrapperWorkspace input {
   border: 0 !important;
 }
 
-/* 오브젝트/요소 이름 칸 */
+/* 오브젝트/요소/속성 리스트 이름 칸 */
 input.entryObjectNameWorkspace,
 .entryPlaygroundPictureName,
 .entryPlaygroundSoundName,
-.entryPlaygroundTableName {
+.entryPlaygroundTableName,
+.editBoxInput,
+.entryVariableSplitterWorkspace .list .attr_inner_box .val_attr .attr_inpt input[type=text],
+.entryVariableSplitterWorkspace .list .attr_inner_box .val_attr .slide_inpt .cnt_box input[type=text],
+.entryVariableSplitterWorkspace .list .attr_inner_box .list_attr .cnt_list input[type=text],
+.entryVariableAddSpaceNameWrapperWorkspace .entryVariableAddSpaceInputWorkspace
+{
   background-color: var(--white-gray) !important;
   border: 0 !important;
 }
@@ -347,9 +351,12 @@ input.entryObjectNameWorkspace,
   border-top: 0 !important;
 }
 
-/* 오브젝트,속성(변수,리스트 등) 열/닫 버튼 이미지 */
+/* 오브젝트,속성(변수,리스트 등) 열/닫 버튼 이미지 및 속성 리스트의 아이콘들 */
 div.entryObjectInformationWorkspace,
-.inpt_box:after {
+.inpt_box:after,
+.inpt:after,
+.inpt_box:before,
+.watch {
   filter: hue-rotate(60deg);
   /* background-image: var(--object-open-button) !important; */
 }
@@ -372,7 +379,8 @@ div.entryObjectDeleteWorkspace,
 }
 
 div.entryObjectDeleteWorkspace:hover,
-.entryPlayground_del:hover {
+.entryPlayground_del:hover,
+.del:hover {
   background-color: var(--white-gray) !important;
 }
 
@@ -406,6 +414,10 @@ div.entryWorkspaceBoard {
 .scrollbar,::-webkit-scrollbar-thumb {
   fill: var(--background-color) !important;
   stroke: var(--more-white-gray) !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
 }
 
 /* 나의 보관함 아이콘 */
@@ -459,24 +471,117 @@ div.tooltip_inner__a65d5 {
 .entryPlaygroundAddSound,
 .entryPlaygroundAddTable
 {
-  background-color:var(--background-color) !important;
+  background-color:var(--dark-gray) !important;
   border: 1px solid var(--background-color) !important;
 }
 
 /* 모양,소리,테이블 속성 - 추가 버튼 */
+/* 및 리스트 요소 안 리스트 불러오기 / 리스트 내보내기 버튼 */
+/* 리스트 항목 추가 삭제 버튼 */
 .entryPlaygroundAddPictureInner,
 .entryPlaygroundAddSoundInner,
 .entryPlaygroundAddTableInner,
-.entryVariableAddWorkspace
+.entryVariableAddWorkspace,
+.entryVariableSplitterWorkspace .list .attr_inner_box .list_attr .btn_box .btn_list,
+.btn_cnt
 {
   background-color:var(--primary-color) !important;
   border: 0 !important;
   color: white !important;
 }
 
-/* 변수 리스트 */
+/* 변수 / 리스트 추가 화면 배경 */
+.entryVariableAddSpaceWorkspace {
+  background-color: var(--light-gray) !important;
+}
+
+/* 변수 / 리스트 추가 화면 글자 */
+.entryVariableAddSpaceWorkspace span,
+.entryVariableAddSpaceWorkspace label
+{
+  color: white !important;
+}
+
+/* 변수 / 리스트 추가 화면 border */
+.entryVariableAddSpaceGlobalWrapperWorkspace .entryVariableAddSpaceCloudWrapperWorkspace {
+  border: 1px solid var(--white-gray) !important;
+}
+
+/* 속성 리스트 함수 리스트 이름 */
+.entryVariableSplitterWorkspace .list .inpt input[type=text], .entryVariableSplitterWorkspace .list .inpt span {
+  color: white !important;
+}
+
+/* 변수(속성 리스트 */
 .entryVariableListWorkspace {
   border-top: 0 !important;
+}
+
+/* 변수/리스트/함수/신호 속성 리스트 칸 */
+.default_list, .list  {
+  border-top: 0 !important;
+}
+
+/* 속성 리스트 안 상세정보 내 텍스트 */
+ul.obj_list li span.text,
+.val_attr span, .val_attr label,
+.use_obj span,
+.attr_inner_box span {
+  color: white !important;
+}
+
+/* 속성 리스트 안 상세정보 배경 */
+.inpt_box + div, .inpt_box + p {
+  background-color: var(--light-gray) !important;
+}
+
+/* 속성 리스트 안 구분 선 border-bottom */
+.entryVariableSplitterWorkspace .list .attr_inner_box .val_attr .attr_inpt,
+.entryVariableSplitterWorkspace .list .attr_inner_box .val_attr .slide_inpt,
+.entryVariableSplitterWorkspace .list .attr_inner_box .list_attr
+ {
+  border-bottom: 1px solid var(--white-gray) !important;
+}
+
+/* 속성 리스트 안 구분 선(어디에 쓰였는가 list) border-top */
+.attr_inner_box,
+.entryVariableSplitterWorkspace .list .attr_inner_box .use_obj .obj_list li,
+.entryVariableSplitterWorkspace .list .use_block .obj_list li,
+.entryVariableSplitterWorkspace .list .attr_inner_box .list_attr .cnt_group,
+.entryVariableSplitterWorkspace .list .attr_inner_box .list_attr .list_cnt,
+.entryVariableAddSpaceButtonWrapperWorkspace
+{
+  border-top: 1px solid var(--white-gray) !important;
+}
+
+/* 속성 리스트 전체 부분 */
+.entryVariableSplitterWorkspace {
+  border: 0 !important;
+}
+
+/* 속성 리스트 밖 카테고리 (모든 오브젝트에서 쓰임 or 이 오브젝트에서 쓰임) 칸 */
+.attr_link {
+  background-color: var(--light-gray) !important;
+  color: white !important;
+}
+
+/* 카테고리 속 왼쪽 버튼과 속성 리스트 안 요소 */
+.attr_link:before,
+.box_sjt:before,
+.entryVariableAddSpaceCheckWorkspace {
+  filter: hue-rotate(60deg);
+}
+
+/* 추가된 항목이 없습니다 */
+.caution_dsc {
+  background-color: transparent !important;
+}
+
+/* 리스트 항목 수 label */
+.entryVariableSplitterWorkspace .list .attr_inner_box .list_attr .list_cnt .cnt_inpt input[type=text] {
+  background-color: var(--white-gray) !important;
+  border: var(--white-gray) !important;
+  color: white !important;
 }
 
 
@@ -489,6 +594,14 @@ div.disabled__a65d5 {
 div.item__a65d5:not(.disabled__a65d5),
 div.item__a65d5:not(.disabled__a65d5) a {
   color: var(--more-white-gray) !important;
+}
+
+.item__a65d5 {
+  background-color: var(--background-color) !important;
+}
+
+.item__a65d5:hover {
+  background-color: var(--light-gray) !important;
 }
 
 /* 툴팁 삼각형 */
@@ -720,15 +833,32 @@ input {
   color: white !important;
 }
 
-.popup_wrap__a65d5 div.pop_btn_box__a65d5 a {
+/* 취소 버튼 */
+.popup_wrap__a65d5 div.pop_btn_box__a65d5 a, /* 오브젝트 추가하기 - 취소 */
+.entryVariableAddSpaceCancelWorkspace  /* 변수 / 리스트 추가하기 - 취소 */
+ {
   border-radius: 999rem;
   border-color: var(--primary-color) !important;
   color: var(--primary-color) !important;
 }
 
-.popup_wrap__a65d5 div.pop_btn_box__a65d5 a.active__a65d5 {
+/* 확인 버튼 */
+.popup_wrap__a65d5 div.pop_btn_box__a65d5 a.active__a65d5, /* 오브젝트 추가하기 - 확인 */
+.entryVariableAddSpaceConfirmWorkspace /* 변수 / 리스트 추가하기 - 확인 */
+{
   background-color: var(--primary-color) !important;
+  border: 0 !important;
   color: white !important;
+}
+
+/* 함수 확인 버튼 */
+.entryFunctionButtonText {
+  fill: var(--primary-color) !important;
+}
+
+/* 함수 취소 버튼 */
+.entryFunctionButtonBorder {
+  stroke: var(--primary-color) !important;
 }
 
 #entryBlockHelperWorkspaceWrapper {
@@ -741,4 +871,221 @@ input {
 
 .rcs-custom-scroll .rcs-inner-handle {
   background-color: var(--light-gray) !important;
+}
+
+/* 리스트 내보내기/불러오기 위 primary color */
+.ListTransfer-cssmodule-title-rnBhm {
+  background-color: var(--primary-color) !important;
+}
+
+/* ai 블록 불러오기 설명 */
+.content__a65d5 {
+  color: white !important;
+}
+
+/* 속성 테이블 */
+.entryVariableSelectButtonWorkspace div {
+  background-color: var(--light-gray) !important;
+}
+
+/* 속성 테이블 내 글자 */
+.entryVariableSelectButtonWorkspace span {
+  color: white !important;
+}
+
+/* 속성 테이블 버튼 */
+.entryVariableSelectButtonWorkspace div:after {
+  border: 1px solid var(--white-gray) !important;
+}
+
+/* 선택된 속성 테이블 버튼 */
+.entryVariableSelectButtonWorkspace.selected div:after {
+  border: 1.5px solid var(--primary-color) !important;
+}
+
+/* 테이블 버튼 들 */
+.entryVariableSelectButtonWorkspace div:before {
+  filter: brightness(1000%);
+}
+
+/* 변수 버튼 아이콘 */
+.entryVariableSelectButtonWorkspace.variable div:before {
+  background-image: url(https://playentry.org/lib/entry-js/images/ic_attr_variable.png) !important;
+}
+
+/* 신호 버튼 아이콘 */
+.entryVariableSelectButtonWorkspace.message div:before {
+  background-image: url(https://playentry.org/lib/entry-js/images/ic_attr_message.png) !important;
+}
+
+/* 리스트 버튼 아이콘 */
+.entryVariableSelectButtonWorkspace.list div:before {
+  background-image: url(https://playentry.org/lib/entry-js/images/ic_attr_list.png) !important;
+}
+
+/* 함수 버튼 아이콘 */
+.entryVariableSelectButtonWorkspace.func div:before {
+  background-image: url(https://playentry.org/lib/entry-js/images/ic_attr_func.png) !important;
+}
+
+
+
+/* 테이블 추가할때 테이블 부분 내 제목 */
+.sjt__a65d5 {
+  color: var(--more-white-gray) !important;
+}
+
+
+/* 엔트리 그림판 */
+/* 컨테이너 */
+.MainContainer {
+  border: 0 !important;
+}
+
+/* 상단 바 */
+.CommonPanel {
+  background-color: var(--dark-gray) !important;
+}
+
+/* 버튼 */
+button.BaseCommonBtn {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  border: 0 !important;
+}
+
+/* 선택되지 않은 버튼 */
+button.ihAvos { 
+  background-color: white !important;
+  color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color) !important; 
+}
+
+/* 선택되지 않은 버튼 안 svg 아이콘 */ 
+button.ihAvos svg {
+  filter: hue-rotate(60deg);
+}
+
+/* 선택된 버튼 */
+button.dSwlSA {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  border: 1px solid var(--primary-color) !important; 
+}
+
+/* 상단 2번째 바 */
+.ControlPanel {
+  background-color: var(--dark-gray) !important;
+  border: 0 !important;
+}
+
+/* 2번째 바의 버튼 그룹 */
+.btn_group {
+  background-color: var(--dark-gray) !important;
+  border-right: 1px solid var(--light-gray) !important;
+}
+
+.btn_group :after {
+  background-color: var(--light-gray) !important;
+}
+
+/* 2번째 바의 버튼들*/
+.withControlBtnWrapper span {
+  color: white !important;
+}
+
+.withControlBtnWrapper:hover {
+  background-color: var(--white-gray) !important;
+}
+
+/* 사이드 바 */
+.side_area {
+  background-color: var(--dark-gray) !important;
+  border-right: 0 !important;
+}
+
+/* 선택되지 않은 도구 */
+.jssRUn {
+  background-color: var(--mid-gray) !important;
+  border: 0 !important;
+}
+
+/* 선택된 도구 */
+.cMmHwW {
+  background-color: var(--light-gray) !important;
+  border: 2px solid var(--primary-color) !important;
+}
+
+.ToolButtonWrapper:hover {
+  background-color: var(--white-gray) !important;
+}
+
+/* 캔버스 */
+.PaperCanvas canvas {
+  background-color: var(--background-color) !important;
+}
+
+/* 아래 영역 */
+.bottom_area {
+  background-color: var(--dark-gray) !important;
+  border-top: 0 !important;
+}
+
+.bottom_area span,
+.bottom_area .ToolTitleComp div {
+  color:white !important;
+}
+
+/* 아래 영역 입력칸 */
+input.NormalInputComp {
+  color: white !important;
+  background-color: var(--white-gray) !important;
+  border: 0 !important;
+}
+
+/* 크기 조절 버튼 */
+div.SizeChangeComp input[type="button"]
+{
+  background-color:var(--primary-color) !important;
+  border: 0 !important;
+  color: white !important;
+}
+/* 크기 조절 입력칸 */
+div.SizeChangeComp input.input
+{
+  background-color:var(--white-gray) !important;
+  border: 0 !important;
+  color: white !important;
+  
+}
+
+/* 팔레트 */
+.tooltip_box__a65d5 {
+  background-color: var(--dark-gray) !important;
+  border: 1px solid var(--more-white-gray) !important;
+}
+
+/* 툴팁 내부 배경 */
+.tooltip_inner__a65d5 {
+  background-color: var(--background-color) !important;
+}
+
+.tooltip_box__a65d5.color_picker__a65d5 .colorSlider__a65d5 .color_box__a65d5 .color_list__a65d5 .item__a65d5 label, .tooltip_box__a65d5.color_picker__a65d5 .colorSlider__a65d5 .color_graph__a65d5 .graph_list__a65d5 .item__a65d5 label {
+  color: white !important;
+}
+
+/* 글상자 에디터 */
+.entryPlaygroundTextWorkspace {
+  background-color: var(--background-color) !important;
+}
+
+/* 글상자 에디터 상단 바 */
+.write_set {
+  background-color: var(--dark-gray) !important;
+  border: 0 !important;
+}
+
+/* 소리 편집 배경 */
+.entryPlaygroundSoundEdit {
+  background-color: var(--background-color) !important;
 }

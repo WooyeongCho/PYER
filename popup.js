@@ -97,9 +97,9 @@ $(document).ready(function(){
     if(t.includes("again")) {
       t = "";
     }
-    if(t == "wy24 loves me") {
+    if(t == "pyer") {
       $("#contents").hide();
-      $( "#wy24" ).append( "<h2>Yes, I love you.</h2>" );
+      $( "#wy24" ).append( "<h2>이스터에그! ❤</h2>" );
     }
   });
 });
