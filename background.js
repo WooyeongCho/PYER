@@ -30,22 +30,23 @@ function codes() {
           chrome.tabs.executeScript({file: "water.js"});
           if(result.selectedTheme) {
             if(result.selectedTheme == 1) {
-              inject("default_theme/def_dark.css", "file");
+              inject("default_theme/def_sans.css", "file");
+              //inject("default_theme/def_dark.css", "file");
             } else if (result.selectedTheme == 2) {
               inject("default_theme/def_mint_by_jwp0116.css", "file");
             } else {
               let code = result.fileData;
               inject(code, "code");
             }
-            inject(`button,li:not(.entryContainerListElementWorkspace),a {
+            // inject(`button,li:not(.entryContainerListElementWorkspace),a {
 
-              transition: filter .2s;
-            }
+            //   transition: filter .2s;
+            // }
             
-            button:hover,li:not(.entryContainerListElementWorkspace):hover,a:hover {
-              filter: brightness(80%);
-            }
-            `, "code")
+            // button:hover,li:not(.entryContainerListElementWorkspace):hover,a:hover {
+            //   filter: brightness(80%);
+            // }
+            // `, "code")
           }
         }
       }

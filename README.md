@@ -1,2 +1,2 @@
-# Pyer
-Entry Work space CSS Theme Chrome Extension
+# Pyer_R2
+Pyer Renewal Version 2 (entry dark theme chrome-extension)

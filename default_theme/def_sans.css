@@ -1,0 +1,744 @@
+/* todo
+1.
+2.
+
+<똥 싸는 곳>
+
+님 저 pyer 3.2 다운받고옴
+*/
+
+
+/* 아름다운 누군가의 아름다운 팔레트 */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap'); */
+
+/* @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff'); */
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 400;
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareR.eot);
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareR.woff) format('woff'),
+    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareR.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 700;
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareB.eot);
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareB.woff) format('woff'),
+    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareB.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 800;
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareEB.eot);
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareEB.woff) format('woff'),
+    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareEB.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 300;
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareL.eot);
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareL.woff) format('woff'),
+    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareL.ttf) format('truetype');
+}
+
+* {
+  /* font-family: 'Noto Sans KR', sans-serif !important;
+  font-weight: 500 !important; */
+  font-family: 'NanumSquare' !important;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #d34aff;
+  --dark-gray: #272727;
+  --black-gray: #161616;
+  --background-color: #2e2e2e;
+  --mid-gray: #2d2d2d;
+  --light-gray: #383838;
+  --white-gray: #5a5a5a;
+  --more-white-gray: #838383;
+  --pane-padding: 5px 42px;
+
+  --object-open-button: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22.65 20.53'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23d34aff;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3E자산 2%3C/title%3E%3Cg id='레이어_2' data-name='레이어 2'%3E%3Cg id='레이어_1-2' data-name='레이어 1'%3E%3Cpath class='cls-1' d='M8.32,1.73.47,15.34a3.46,3.46,0,0,0,3,5.19H19.18a3.46,3.46,0,0,0,3-5.19L14.33,1.73A3.47,3.47,0,0,0,8.32,1.73Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  --cancel-button: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18.77 18.77'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;stroke:%23d34aff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3px;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3E자산 5%3C/title%3E%3Cg id='레이어_2' data-name='레이어 2'%3E%3Cg id='레이어_1-2' data-name='레이어 1'%3E%3Cline class='cls-1' x1='17.27' y1='1.5' x2='1.5' y2='17.27'/%3E%3Cline class='cls-1' x1='17.27' y1='17.27' x2='1.5' y2='1.5'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+}
+
+
+/* 상단 헤더 */
+header.common_gnb {
+  background-color: var(--background-color);
+}
+
+/* 상단 헤더의 버튼 */
+a.btn_work_space {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+
+/* 상단 헤더의 버튼 - 삼각형( 펼치기/닫기 기호 ) */
+.btn_work_space.on:after {
+  background: none !important;
+  display: none;
+}
+
+/* 앞으로 */
+.btn_workspace_redo {
+  margin-right: 1rem !important;
+}
+
+div.group_inner {
+  padding: 0 !important;
+}
+
+div.group_inner:nth-child(n+3):nth-child(-n+4) {
+  margin-right: 1rem;
+}
+
+div.group_inner:before {
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin-top: 0 !important;
+  background-color: transparent !important;
+  content: '' !important;
+}
+
+a.btn_work_space:hover {
+  background-color: var(--white-gray) !important;
+  border: 0 !important;
+}
+
+a.btn_work_space {
+  width: 2rem !important;
+  background-position: center !important;
+}
+
+a.btn_work_space:before {
+  left: 6px !important;
+  background-size: 16px !important;
+  background-position: center !important;
+}
+
+a.btn_work_space:after {
+  background-image: none;
+}
+
+a.btn_workspace_print {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAA9klEQVRYCe2T0QrCUAxD9/8/rSiusN2b7IRRLsL2YtekPbHitpnn1fQYpJaastRaTRZKTTYVAqvbTTlqrSYLpSabCoHV7aYctVaThVKTTYXA6nZTjlqryUKpyaZCYHW7KUet1eRHgReoWy4qDjEXZRiw31BDd3FjW8wf8E+g4SSnBrrQ4R9w4+XEnr7aQDfYdnSa5NdEgdyCRNtTuhkZiAy7xUq72vsE+r8LfRLPfu+rbzKbIT23d9fsJ4EkHgsjYgIjXsK0HgJJPBZGxARGvIRpPQSSeCyMiAmMeAnTeggk8VgYERMY8RKm9RBI4rEwKiZA5yW8N68bgzTATMsVAAAAAElFTkSuQmCC) no-repeat !important;
+  background-size: 16px auto !important;
+  background-position: center !important;
+  border: 0 !important;
+  border-radius: 999rem;
+}
+
+a.btn_workspace_print:hover {
+  background-color: var(--white-gray) !important;
+  border: 0 !important;
+}
+
+div.work_space.print {
+  margin-left: 10px !important;
+}
+
+a.btn_workspace_undo {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAcCAYAAAAEN20fAAABZUlEQVRYCcWXIXPDMAxG+6dKB0tHR0sHR0dHB0dLR0cLS0dLRwdLR9/uu5NuvsRy7LT2dJdzLnE+vSiS7Gw2KwzYAWfgE9iukLj+EYP44s/Gg2QghDMWJIAYC1KAGAeyADEGpAKiP0glRF+QBgiBqJccgGfg/mZV1AghkKmpx7yZzrrSvgHEFOpDmk1ttAOEQ12Al6pP1hHCYTQqOvGnGgThQMcQxrLeJ44Y8zD/AKKXfZ0lMHAHnEaEIvHxAzzkYLaWTMnc7qf5TZWSyBpRd4LEweMsKrpgME+AQldr6qRKQLV5He+2jazR0HazWNJ7QI2oxrJClntaf+SsZPNcScNkC1i6N43EsiCuZVEW0HcgcPC54VhZUUUQFy9oCXBZw95I7TmyZRGjMS3l0dT2DlwcTUBLe86qQeQkgJk3uIjIBHIV1QQSwBwjv+F1YFpRzSAJjHf0S+iwdMMq6upfTktg6Zx+AZnAhi6TSYVMAAAAAElFTkSuQmCC) !important;
+  background-size: 16px !important;
+  background-position: center !important;
+  margin-left: 10px !important;
+  border-radius: 999rem;
+}
+
+a.btn_workspace_redo {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAcCAYAAAAEN20fAAABfUlEQVRYCcWXr1vDMBCG90/NImdnsVgkFotFYrHYWSR2dnYWicW+PN/zXNokza+WLj3TdO3dvfmSu2a73QoG7IEzcAEOK4RcFsJAMLtuBhOBiGcbmATINjAZkP4wBZC+MBWQfjANILeBscRH4Bl4tx6iZDX7fzVZ8gPwZuVZS5p7vhxGDQo45SIv+H0ejKnwAvwsSFZzaYMxiDVVSIGVYQziM+V5g9/SMJ0h3LzOk88t8OqedryGIMA98NsRQKm+gLtBEVsSHW56mophP0BoADz2JLDGOIHQUU/HvJpp2fTeh7V2tXdVl3Z+qynG00QJU0N7o2RKru/KuJaenrasJX/3TI3xwXMNhzZD97J//TaAUMLQXcsqRWsm1Y6R63hrQVItPNzNo8tk1ABSjyWpElPR2hdV8GkqINPK8J3dONHAZkEoTgFER4a2Cdmud6LMhsiA5CvDKRBfvU+81rGNPgoSKVKujMh3uLVjnjpqsjSHFwsDA3F/OfOVUYjxB+ePhj9iFz6iAAAAAElFTkSuQmCC) !important;
+  background-size: 16px !important;
+  background-position: center !important;
+  margin-left: 0 !important;
+  margin-right: .5rem;
+  margin-left: 10px !important;
+  border-radius: 999rem;
+}
+
+a.btn_workspace_undo:hover,
+a.btn_workspace_redo:hover
+{
+  background-color: var(--white-gray);
+}
+
+/* 언어 */
+div.lang_select_box a.select_link {
+  background-color: transparent !important;
+  border: 0 !important;
+  height: 20px !important;
+  display: flex !important;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* 메모, 보관함 배경 */
+div#entryButtonTab {
+  background-color: var(--background-color);
+}
+
+/* 선택된 장면 */
+.selectedScene .entrySceneInputCover {
+  border-bottom-color: var(--primary-color) !important;
+  background-color: var(--black-gray) !important;
+  min-width: 120px !important;
+}
+
+/* 장면 삭제하기 버튼 */
+.selectedScene .entrySceneRemoveButtonWorkspace {
+  background-image: var(--cancel-button) !important;
+}
+
+/* 장면 이름 */
+.entrySceneFieldWorkspace {
+  color: white !important;
+  background-color: transparent !important;
+}
+
+.entrySceneInputCover {
+  background-color: var(--white-gray) !important;
+}
+
+/* 장면 목록 */
+div.entryScene {
+  background-color: var(--background-color);
+}
+
+/* 작품 실행창 */
+div.engineContainer {
+  background-color: var(--background-color);
+}
+
+/* 블록 조립소 */
+div.entryPlayground {
+  background-color: var(--background-color);
+}
+
+/* 블록 배경 */
+div#entryCategoryTab {
+  background-color: var(--background-color);
+}
+
+/* 선택되지 않은 속성 탭 */
+li.entryTabListItemWorkspace {
+  background-color: var(--white-gray);
+  color: white;
+}
+
+/* 선택된 속성 탭 (포인트) */
+li.entryTabSelected {
+  background-color: var(--primary-color) !important;
+}
+
+/* 블록 리고리 배경 */
+div.entryCategoryListWorkspace,
+div.entryCategoryListWorkspace:before,
+div#entryWorkspaceBlockMenu,
+div.entryCategoryListWorkspace li {
+  background-color: var(--background-color);
+  border: 0;
+  color: white;
+}
+
+/* 블록 카테고리 */
+li.entryCategoryElementWorkspace {
+  border-radius: .3rem;
+}
+
+/* 베타 태그 */
+.entryCategoryBetaTag {
+  filter: hue-rotate(-100deg);
+}
+
+/* 오브젝트 리스트 */
+div.entryContainerListWorkspaceWrapper,
+div.propertyContent {
+  background-color: var(--light-gray);
+  border: 0;
+}
+
+/* 요소(그림,소리,테이블 등) 칸 */
+li.entryContainerListElementWorkspace,
+.entryPlaygroundPictureElement,
+.entryPlaygroundSoundElement,
+.entryPlaygroundTableElement,
+.inpt_box
+{
+  background-color: var(--background-color) !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--dark-gray) !important;
+}
+
+/* 선택된 요소 칸 */
+.entryPictureSelected,
+.entrySoundSelected,
+.entryTableSelected
+{
+  background-color: var(--light-gray) !important;
+  border-left: 4px solid var(--primary-color) !important;
+}
+
+.rcs-inner-container + div {
+  border-left: 0 !important;
+  background-color: var(--light-gray) !important;
+}
+
+/* 요소 숫자 번호 */
+.entryPlaygroundPictureOrder, .entryPlaygroundSoundOrder {
+  background-color: var(--primary-color) !important;
+}
+
+/* 드래그 중인 요소 칸
+.sortableItem[style*: "position: fixed"] {
+  box-shadow
+} */
+
+/* 오브젝트 / 요소 속성 */
+div.entryObjectRotationWrapperWorkspace {
+  border-radius: .3rem;
+  background-color: var(--light-gray) !important;
+  border: 0 !important;
+}
+
+li.selectedObject {
+  border: 2px solid var(--dark-gray) !important;
+  background-color: var(--background-color) !important;
+  border-radius: 2px;
+}
+
+/* 오브젝트 속성 글자 (x, y, 방향 등 / 요소 속성 글자 */
+div.entryObjectRotationWrapperWorkspace span,
+.entryPlaygroundPictureSize,
+.entryPlaygroundSoundLength
+{
+  color: white !important;
+}
+
+/* 오브젝트 속성 입력칸 */
+div.entryObjectRotationWrapperWorkspace input {
+  background-color: var(--white-gray) !important;
+  color: white !important;
+  border: 0 !important;
+}
+
+/* 오브젝트/요소 이름 칸 */
+input.entryObjectNameWorkspace,
+.entryPlaygroundPictureName,
+.entryPlaygroundSoundName,
+.entryPlaygroundTableName {
+  background-color: var(--white-gray) !important;
+  border: 0 !important;
+}
+
+/* 이동방향 속성 칸 */
+.rotationMethodWrapper {
+  border-top: 0 !important;
+}
+
+/* 오브젝트,속성(변수,리스트 등) 열/닫 버튼 이미지 */
+div.entryObjectInformationWorkspace,
+.inpt_box:after {
+  filter: hue-rotate(60deg);
+  /* background-image: var(--object-open-button) !important; */
+}
+
+/* 오브젝트 이름, 작품 이름 */
+input.entryObjectNameWorkspace,
+input#common_srch {
+  background-color: var(--white-gray);
+  color: white !important;
+  border: 0;
+}
+
+/* 오브젝트/요소 삭제 버튼 */
+div.entryObjectDeleteWorkspace,
+.entryPlayground_del,
+.del
+{
+  background-color: transparent !important;
+  border: 0 !important;
+}
+
+div.entryObjectDeleteWorkspace:hover,
+.entryPlayground_del:hover {
+  background-color: var(--white-gray) !important;
+}
+
+/* 장면 추가 버튼 */
+span.entrySceneAddButtonWorkspace {
+  width: 20px;
+  height: 20px;
+  margin-left: 9px;
+  margin-top: 9px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSLroIjsnbTslrRfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IgoJIHk9IjBweCIgdmlld0JveD0iMCAwIDMwIDMwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMCAzMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM4MzgzODM7fQo8L3N0eWxlPgo8Zz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNSwwQzYuNzIsMCwwLDYuNzIsMCwxNWMwLDguMjgsNi43MiwxNSwxNSwxNXMxNS02LjcyLDE1LTE1QzMwLDYuNzIsMjMuMjgsMCwxNSwweiBNMjIuNSwxNi41aC02djYKCQljMCwwLjgzLTAuNjcsMS41LTEuNSwxLjVzLTEuNS0wLjY3LTEuNS0xLjV2LTZoLTZDNi42NywxNi41LDYsMTUuODMsNiwxNXMwLjY3LTEuNSwxLjUtMS41aDZ2LTZDMTMuNSw2LjY3LDE0LjE3LDYsMTUsNgoJCXMxLjUsMC42NywxLjUsMS41djZoNmMwLjgzLDAsMS41LDAuNjcsMS41LDEuNVMyMy4zMywxNi41LDIyLjUsMTYuNXoiLz4KPC9nPgo8L3N2Zz4K);
+  background-size: 20px auto;
+}
+
+/* 블록 조립소 배경 오버레이 (함수) */
+div.entryOverlayBoard {
+  background: rgb(25 25 25 / 70%);
+}
+
+/* 블록 조립소 배경 */
+div.entryWorkspaceBoard {
+  padding: 0;
+  margin: 0;
+  background-color: var(--dark-gray);
+  background-image: radial-gradient(var(--light-gray) 3px,
+      transparent 3px);
+  background-size: 40px 40px;
+  border: 0px;
+}
+
+/* 스크롤바 */
+.scrollbar,::-webkit-scrollbar-thumb {
+  fill: var(--background-color) !important;
+  stroke: var(--more-white-gray) !important;
+}
+
+/* 나의 보관함 아이콘 */
+div.entryPlaygroundBackPackButtonWorkspace,
+div.Backpack__09913 .titleArea__09913 .icon__09913 {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill-rule='nonzero'%3E%3Crect width='31' height='31' x='.5' y='.5' fill='%23FFF' stroke='%23D34AFF' rx='10'/%3E%3Cg transform='translate(7 6)'%3E%3Crect width='16.5' height='10.5' x='.75' y='6.75' fill='%23D34AFF' stroke='%23D34AFF' stroke-width='1.5' rx='2'/%3E%3Cpath stroke='%23FFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M13 9v2H5V9'/%3E%3Crect width='14' height='1.5' x='2' y='3' fill='%23FFB500' rx='.75'/%3E%3Crect width='10' height='1.5' x='4' fill='%23FFB500' rx='.75'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
+}
+
+/* 나의 보관함 */
+div.Backpack__09913 {
+  border-radius: .5rem;
+  background-color: var(--dark-gray);
+  border-color: var(--light-gray);
+}
+
+/* 보관함 */
+div.Backpack__09913 .titleArea__09913 {
+  border-color: var(--light-gray);
+}
+
+div.Backpack__09913 .titleArea__09913 .title__09913 {
+  color: white;
+}
+
+/* 블록 꾸러미 */
+div.blockMenuContainer {
+  background-color: var(--background-color) !important;
+  border: 0 !important;
+}
+
+/* 블록 조립소 우클릭 화면, 툴팁 배경 */
+div.rcs-outer-container,
+div.tooltip_inner__a65d5 {
+  border-radius: 0 !important;
+  background-color: var(--background-color) !important;
+}
+
+/* 속성 탭 눌렀을 때 border 없애기 */
+.entryPlaygroundPictureList,
+.entryPlaygroundSoundList,
+.entryVariablePanelWorkspace,
+.entryPlaygroundTableList,
+.entryPlaygroundAddPicture
+{
+  background-color: var(--background-color) !important;
+  border: 1px solid var(--background-color) !important;
+}
+
+/* 모양,소리,테이블 속성 - 버튼의 배경 */
+.entryPlaygroundAddPicture,
+.entryPlaygroundAddSound,
+.entryPlaygroundAddTable
+{
+  background-color:var(--background-color) !important;
+  border: 1px solid var(--background-color) !important;
+}
+
+/* 모양,소리,테이블 속성 - 추가 버튼 */
+.entryPlaygroundAddPictureInner,
+.entryPlaygroundAddSoundInner,
+.entryPlaygroundAddTableInner,
+.entryVariableAddWorkspace
+{
+  background-color:var(--primary-color) !important;
+  border: 0 !important;
+  color: white !important;
+}
+
+/* 변수 리스트 */
+.entryVariableListWorkspace {
+  border-top: 0 !important;
+}
+
+
+/* 우클릭 화면, 툴팁 - 비활성화 */
+div.disabled__a65d5 {
+  color: var(--white-gray) !important;
+}
+
+/* 우클릭 화면, 툴팁 - 활성화 */
+div.item__a65d5:not(.disabled__a65d5),
+div.item__a65d5:not(.disabled__a65d5) a {
+  color: var(--more-white-gray) !important;
+}
+
+/* 툴팁 삼각형 */
+.tooltip_box__a65d5 .arr__a65d5 i {
+  background-color: var(--background-color) !important;
+  border: 0 !important;
+}
+
+/* 우클릭 화면 중간 bar */
+div.item__a65d5:after {
+  border-bottom: 1px solid var(--white-gray) !important;
+}
+
+/* 블록 텍스트 */
+div#entryWorkspaceBoard svg g text tspan {
+  FONT-WEIGHT: 700;
+}
+
+/* 이미지 색 변경 */
+.entryPlaygroundCommentButtonWorkspace, .propertyTabElement.selected, .entryObjectRotateModeWorkspace.selected {
+  filter: hue-rotate(60deg);
+}
+
+/* 작품 실행창 */
+.entryEngine_w {
+  border: 0 !important;
+  background-color: var(--light-gray) !important;
+}
+
+/* 미리보기 작업창 밑 버튼 감싸는 div */
+.entryEngineButtonWrapper {
+  background-color: var(--light-gray) !important;
+}
+
+/* 작품 실행창 밑 버튼 */
+.entryAddButtonWorkspace_w,
+.entryPauseButtonWorkspace_w,
+.entryRestartButtonWorkspace_w,
+.entryRunButtonWorkspace_w,
+.entryStopButtonWorkspace_w,
+.entryPauseButtonWorkspace_full
+{
+  border: 0 !important;
+  background-color: var(--light-gray) !important;
+  filter: hue-rotate(60deg);
+}
+
+/* 작품 실행창 밑 버튼 호버 */
+.entryAddButtonWorkspace_w:hover,
+.entryPauseButtonWorkspace_w:hover,
+.entryRestartButtonWorkspace_w:hover,
+.entryRunButtonWorkspace_w:hover,
+.entryStopButtonWorkspace_w:hover,
+.entryPauseButtonWorkspace_full:hover {
+  background-color: var(--white-gray) !important;
+}
+
+/* 작품 실행창 전체화면 border 없애기 */
+.entryEngineButtonWrapper,
+.entryCanvasWorkspace,
+.entryPopupWindow
+{
+  border: 0 !important;
+  border-top: 0 !important;
+}
+
+/* 작품 싱행창 버튼들 */
+.entrySpeedButtonWorkspace {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAfCAYAAACPvW/2AAACtklEQVRYCcWXzWoVQRCFL2QnJBDIEwQScC1xkReQ4C4rd3mFPEEwr6KQYMhGcO3Obdy4E8WFeY18csZTsXtu1dy5GrVhqO6aOlVn+qe6ZrFYswHbzG/ba7qfbw4cARfA5/l8BlthjuZHWmEJHADXwFcT+QJcAifAIbALfPejvnR6JxvZqgkrHwcrwtWvgQ3grCHy0YG2xqgglOi3jBE2iMnnxth2cgxsAq/sRF95CjyqQBWhsBfWPmLG5Hsz3k9Kk/lkMhJPJgGLxWIVocDLV+NXMaZJeZliZgK7Ew4ruQahnXBqqVj18nnPjDC8ByZJAa/1VISllw8YfI39n6U4nyadBq2zprZ1sJJU6tTKzJdjKJZiLp8+H0uxPw3niaNyYwdmLL2h9UFq3Yd5o0t/3eGc9MRUx7ML2pBSrtnrgDMGwGPvsY6MoCarmIr9K3k6A4vpSRbDwJIM8EJPhnXgvfGHhq3zlGJfDDrfTboOtJ5LSS+AlQT2gTd+9iu7Sq+Yji0O25q2aJcVqNI7TQQ+ZH2MC0e+ZgZ8SyhdrsLHoAZug0Ujb6cw2btm2WgJHWbGU7qGRNedwmTvfCEPPlpCu5lxpQNuOhb94KbCZXpXDEuEooRoZZl9gbueQze6ywJL56zexoj+HxPqGIwHD0Fo9pIBx2MCyfi4IjXWV0s2e1P/BUKqMofWburZx96EXoaTRKoqXGeGVPIOrSX0O4kxI5WXE+N1asbjxKjfmm9O393F2mDSrmdK+6l7UuNC6XtS15Y4/PxtAq48Y+myrbpci1j3alUJMy7XqxbwzCXC/yo/lIue3xNSB3jnWfofBdrbjowJPfUs/esSVrOT/9kA556lVixVektfM0PRVJ6tb/XPS7jrG/0CR3sQMhEwIaVY0/WTK0gR0Z6a/P2JQOtIk5LvD1mF+gMM9ZWn1v3Y3AAAAABJRU5ErkJggg==) !important;
+}
+
+.entryCoordinateButtonWorkspace_w:not(.toggleOn) {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA40lEQVRYCe1XwQ2DMAzMDFWf/WXLbtE5mKhTdISrLuIIIKyQqlh5OBKxYiz7fCYWTimlBCDDf2XG3gefAHg8SjcTgNYTwK2gOtgE7ODVRtWyA3AHwFhlCQCzNoMzQsuxUJyxm0EwJhYAcmDJM45/ABoAgoGBGNBX7iwrA86B1W0rAOv+Sy+AOluy0y4ABAPBwEAM6P46y8qAc+DohPrHrCWwerv0KpHOluy0CwADMcBhwaor9Z21nRq+OB1tBhMOKRyXTBD/ArAazT4AXsxsPRmrQVwtmfB7YWkHogyNV29zWR9fMBiewDVF/UsAAAAASUVORK5CYII=) !important;
+}
+
+.entryCoordinateButtonWorkspace_w.toggleOn, .entryMouseViewWorkspace_w input {
+  filter: hue-rotate(60deg);
+}
+
+.entryMaximizeButtonWorkspace_w {
+  filter: invert(94%) sepia(0%) saturate(7486%) hue-rotate(98deg) brightness(104%) contrast(105%);
+}
+
+.entryPopupWindow .entryMaximizeButtonWorkspace_w {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA/klEQVRYCe2VwQ3CQAwEU0MKpQA64UUBFGm04HtZm50P8CAnoRPeuV3HkS7bBldVPfRLOOWSz9CpMeVGQCpQY8qlvKFTY8qNgFSgxpRLeUOnxpQbAalAjSmX8oZOjSk3Ao4KVbW38e2Ik1ZVt2b3xCK9w6/1Xpd0qKouzepMbmKNLOzyvBPDblis1uv2PNo1sgRppHqq/DQ9nm5CZ9brsBlpoqd+TuCcwB9M4OcXEWhAt5jWZ67i9JL7Wv3cxyg1IL2b0CS+/zleDa5Xtf67nXLuvK1TY8rZICdQY8q5HFunxpSzQU6gxpRzObZOjSlng5xAjSnncmydGlNuBT0BOXyWg1Gb+noAAAAASUVORK5CYII=) !important;
+  filter: none;
+}
+
+/* 속도 조절창 */
+#progressCell0 {
+  background-color: #e8a2ff !important;
+}
+
+#progressCell1 {
+  background-color: #e28bff !important;
+}
+
+#progressCell2 {
+  background-color: #dc71ff !important;
+}
+
+#progressCell3 {
+  background-color: #d861ff !important;
+}
+
+#progressCell4 {
+  background-color: #d34aff !important;
+}
+
+.progressCell.on {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAC3klEQVRYCc2ZzW4TMRDH02OlnvsCeZuUQ1WJI9y59oC4VSoHngCJF6iQOCPELWcOlZAWUFNFSstHQCiJYFOqiJb9o//Gbr2u7bGXbFlLq3g99sxvx19jp9OpmQB0AewCOADQBzAAMFcP8yyjjHW6Nc2kNQOwCWAfQIb0xDZsu5lmNaI2gA0Ae8o76WjVFvQydW1EmJarANgB8K1qYyVv1LkjE3hqAFhTX1qsBMethLrpzTUPhrsYwDqAF26djZTS1rqbxipVnrtNOP3FtCl7UrlcN7rt3z3LX9VXNSGaHHPSB9O2e+KopaSJ2SpB2XIy3FyC/nPX2pDVrlY7BBfQxtLs1a/R0b35KZ/Z6/MTwRBZrnccAI+FBv8k/v785zDrAeZDYEHp/tUMqbm3CvqX4h/9xcesh8KEY56eFBRkJaCKSoS69cTzw+JLtlUsbLhIQBrtdlQ4VI8g0OrsLb6+3/49ccGxLGIcUvsuARmzrTQRbnA/P/HBfXoyGbBOhNEDAjKw9CZ+qTn7JMWUjx5Oj31wwwezoaTDgOkTkNGvMxHONjR+Nj0OGRg/9cN9uHs+DrV1QAwI6F3/6DkbkO8+yOnLs5GrPsve3fmTJ8KRd07A3EFeFvkAXZD5m4vPWa+4dAMWl5T77ATK8+QuNgG0J+kZesiUmXl6NgAREpVd7J0kNEwI05idp5xjyy7X7xyTIQJBVk6S4DITA6lh7N/Ro0lwQglwFJfLDM+twVQHkusg2wUVy8JyoeYBXEwpkNxBVgBHpuWBPzZYiILcKhbcg8UvlissgwVGDOrELzcBIEAWjF6iFMmVKuEWrzS8C7atywfJuM+uW/O9GrAqL/IAHZ0IWdmn5QA0WjePH1fBqs60/tCkvMh7mHYeOw1PJnV1Sr9F1L3ZtRpM/7b+6kN1dXsvjyxPsrubHJPUnX79piGVN9t5gWlBtvcK2ALljsNbiHZdopuQOq8O/I3/DfEXLySLL2CBHoQAAAAASUVORK5CYII=) !important;
+}
+
+.objectInfo_visible, .objectInfo_unlock {
+  filter: hue-rotate(60deg);
+}
+
+/* 오브젝트 추가창 */
+.popup_wrap__a65d5, .pop_content__a65d5 {
+  background-color: var(--background-color) !important;
+}
+
+.sub_menu__a65d5, #popupList {
+  background-color: var(--light-gray);
+}
+
+.cont_sel_box__a65d5, .cont_sel_box__a65d5:before, .cont_sel_box__a65d5:after, .img_caution_box__a65d5 {
+  background-color: var(--background-color) !important;
+}
+
+.tit__a65d5, .dsc_box__a65d5, .caution__a65d5.imico_pop_caution__a65d5, .draw_dsc__a65d5, .warn_box__a65d5 *, .input_box__a65d5 .list__a65d5 * {
+  color: white !important;
+}
+
+.menu_list__a65d5 li:not(.on__a65d5) {
+  border-color: #7a7a7a !important;
+}
+
+.menu_list__a65d5 li:not(.on__a65d5) a {
+  color: #7a7a7a !important;
+}
+
+.obj_list__a65d5 li:not(.on__a65d5) {
+  background-color: var(--mid-gray) !important;
+}
+
+.obj_list__a65d5 li.on__a65d5 .link__a65d5 .sjt__a65d5 {
+  background-color: var(--primary-color) !important;
+}
+
+.obj_list__a65d5 li.on__a65d5 .link__a65d5:after {
+  border: 2px solid var(--primary-color) !important;
+}
+
+.obj_list__a65d5 li .link__a65d5:after {
+  border: 0 !important;
+}
+
+.sjt__a65d5 {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.obj_list__a65d5 .thmb__a65d5, .section_cont__a65d5 {
+  background-color: var(--mid-gray) !important;
+}
+
+.obj_list__a65d5 .thmb__a65d5.svg__a65d5:after {
+  filter: hue-rotate(60deg);
+}
+
+.menu_inner__a65d5 a.on__a65d5 {
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.vector__a65d5.on__a65d5, .section_navi__a65d5 .list__a65d5 .on__a65d5, .menu_list__a65d5 .on__a65d5 {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.pop_header__a65d5 {
+  background-color: var(--background-color) !important;
+  padding-left: 1rem !important;
+}
+
+.pop_header__a65d5 button {
+  display: none;
+}
+
+.copyright_link__a65d5 {
+  color: var(--primary-color) !important;
+}
+
+.warn_box__a65d5 {
+  background-color: var(--background-color) !important;
+}
+
+.write_set__a65d5, .input_inner__a65d5 {
+  background-color: var(--mid-gray) !important;
+}
+
+.input_inner__a65d5 input, .write_set__a65d5 {
+  border: 0 !important;
+  background-color: #5a5a5a;
+}
+
+.section_navi__a65d5 .list__a65d5 li:not(.on__a65d5) {
+  background-color: #5a5a5a !important;
+}
+
+.section_navi__a65d5 .list__a65d5 li:not(.on__a65d5) a {
+  color: white !important;
+}
+
+.srch_box__a65d5 {
+  border-color: var(--primary-color) !important;
+}
+
+.btn_srch__a65d5.imbtn_pop_srch__a65d5 {
+  filter: hue-rotate(60deg);
+}
+
+.pop_selectbox__a65d5 * {
+  background-color: var(--mid-gray) !important;
+}
+
+input {
+  color: white !important;
+}
+
+.popup_wrap__a65d5 div.pop_btn_box__a65d5 a {
+  border-radius: 999rem;
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.popup_wrap__a65d5 div.pop_btn_box__a65d5 a.active__a65d5 {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+#entryBlockHelperWorkspaceWrapper {
+  background-color: var(--mid-gray) !important;
+}
+
+#entryBlockHelperDescriptionWorkspace {
+  color: white !important;
+}
+
+.rcs-custom-scroll .rcs-inner-handle {
+  background-color: var(--light-gray) !important;
+}

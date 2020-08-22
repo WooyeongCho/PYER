@@ -1,77 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Gugi&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="popup.css">
-    <script src="jquery-3.3.1.js"></script>
-    <script src="materialize.min.js"></script>
-    <script src="popup.js"></script>
-  </head>
-  <body>
-    <div class="navbar-fixed">
-      <nav class="nav-extended light-gray z-depth-0" style="padding-left: 10px; padding-right: 10px;">
-        <h5 class="inline m">Pyer</h5>
-        <span class="inline">엔트리 테마</span>
-        <div class="waves-effect waves-light mButton" id="githubLink">
-          <i class="material-icons center" style="">code</i>
-        </div>
-        <div class="waves-effect waves-light mButton" id="helpButton">
-          <i class="material-icons center" style="">help</i>
-        </div>
-      </nav>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gugi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+  <script src="jquery-3.3.1.js"></script>
+  <script src="materialize.min.js"></script>
+  <script src="popup.js"></script>
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav class="nav-extended light-gray z-depth-0" style="padding-left: 10px; padding-right: 10px;">
+      <h5 class="inline m">Pyer</h5>
+      <span class="inline">엔트리 테마</span>
+      <div class="waves-effect waves-light mButton" id="githubLink">
+        <i class="material-icons center">code</i>
+      </div>
+      <div class="waves-effect waves-light mButton" id="helpButton">
+        <i class="material-icons center">help</i>
+      </div>
+    </nav>
+  </div>
+  <br />
+  <div id="contents">
+    <div class="switch tooltipped" data-position="bottom" data-tooltip="테마 활성화 상태를 설정합니다.">
+      <label>
+        비활성화
+        <input type="checkbox" id="es">
+        <span class="lever "></span>
+        활성화
+      </label>
     </div>
     <br />
-    <div id="contents">
-
-      <div class="switch tooltipped " data-position="bottom" data-tooltip="테마 활성화 상태를 설정합니다.">
-        <label>
-          비활성화
-          <input type="checkbox" id="es">
-          <span class="lever "></span>
-          활성화
-        </label>
-      </div>
-      <br />
-      <br />
-      <div class="input-field">
-        <select id="ts">
-          <option value="1">[기본 제공] 어두운 테마</option>
-          <option value="2">[기본 제공] 민트 테마 (By jwp0116)</option>
-          <option value="3" id="outter">외부 테마</option>
-        </select>
-        <label>테마 선택하기</label>
-      </div>
-
-      <br />
-
-      <div class="btn waves-effect waves-light light-gray z-depth-0" id="save">  
-        <i class="material-icons center ">save</i>
-      </div>
-
-      <div class="btn waves-effect waves-light light-gray z-depth-0" id="upload">CSS 불러오기
-        <i class="material-icons right">file_upload</i>
-      </div>
-
-      <br />
-      <br />
-
-      
-
+    <br />
+    <div class="input-field">
+      <select id="ts">
+        <option value="1">[기본 제공] 어두운 테마</option>
+        <option value="2">[기본 제공] 민트 테마 (By jwp0116)</option>
+        <option value="3" id="outter">외부 테마</option>
+      </select>
+      <label>테마 선택하기</label>
     </div>
-    <div id="wy24"></div>
-
-    <div id="footer-div" class="light-gray">
-
-      <p id="fileNameView" class="footer-text">선택된 파일 : </p>
-      
-      <p id="version_text" class="footer-text">v.</p>
-
-      <p class="footer-text">Copyright (c) 2020 Impress Flows</p>
-
-      <input id="file-input" type="file" accept=".css" name="name" style="display: none;" />
+    <br />
+    <div class="btn waves-effect waves-light light-gray z-depth-0" id="save">
+      <i class="material-icons center ">save</i>
     </div>
-  </body>
+
+    <div class="btn waves-effect waves-light light-gray z-depth-0" id="upload">CSS 불러오기
+      <i class="material-icons right">file_upload</i>
+    </div>
+    <br />
+    <br />
+  </div>
+  <div id="wy24"></div>
+  <div id="footer-div" class="light-gray">
+    <p id="fileNameView" class="footer-text">선택된 파일 : </p>
+    <p id="version_text" class="footer-text">v.</p>
+    <p class="footer-text">Copyright (c) 2020 Impress Flows</p>
+    <input id="file-input" type="file" accept=".css" name="name" style="display: none;" />
+  </div>
+</body>
+
 </html>
