@@ -12,8 +12,8 @@ function addElement () {
     var header = document.getElementsByClassName( 'common_gnb' )[0];
     var str = `
     <div id="water_pyer" style="float: left; margin-left:20px; margin-top:4px;">
-      <span style="color:white; font-size: 16px; font-weight:bold;">${"Pyer!"}</span> 
-      <span style="color:#787878; font-size: 14px; float: right; margin-left:10px; margin-top:2px; font-weight:bold;">개발 <a href="https://github.com/WooyeongCho" style="color:#d34aff;" target="_blank">wy24</a> 도움 <a href="https://github.com/thoratica" style="color:#d34aff;" target="_blank">thoratica</a></span>
+      <span style="color:white; font-size: 16px; font-weight:bold;" id="pyer">${"Pyer!"}</span> 
+      <span style="color:#787878; font-size: 14px; float: right; margin-left:10px; margin-top:2px; font-weight:bold;" id="pyer_sub">개발 <a href="https://github.com/WooyeongCho" style="color:#d34aff;" target="_blank" id="pyer_dev">wy24</a> 도움 <a href="https://github.com/thoratica" style="color:#d34aff;" target="_blank" id="pyer_sup">tica</a>, <a href="https://github.com/jedeop" style="color:#d34aff;" target="_blank" id="pyer_sup">jedoep</a></span>
     </div>`;
     
     header.insertAdjacentHTML( 'beforeend', str );

@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 400;
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareR.eot);
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareR.eot?#iefix) format('embedded-opentype'), url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareR.woff) format('woff'), url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareR.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 700;
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareB.eot);
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareB.eot?#iefix) format('embedded-opentype'), url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareB.woff) format('woff'), url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareB.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 800;
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareEB.eot);
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareEB.eot?#iefix) format('embedded-opentype'), url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareEB.woff) format('woff'), url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareEB.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 300;
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareL.eot);
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareL.eot?#iefix) format('embedded-opentype'), url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareL.woff) format('woff'), url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareL.ttf) format('truetype');
+}
+
+:root {
+  --mdc-theme-primary: #d34aff;
+  --mdc-theme-secondary: #d34aff;
+  --mdc-theme-background: #2e2e2e;
+  --mdc-theme-surface: #424242;
+  --mdc-theme-on-primary: #fff;
+  --mdc-theme-on-secondary: #2e2e2e;
+  --white-gray: #5f5f5f;
+  --more-white-gray: #929292;
+  --width: 440px;
+  --height: 590px;
+}
+
+.mdc-top-app-bar {
+  background-color: var(--mdc-theme-surface);
+}
+
+* {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  font-family: 'NanumSquare' !important;
+  font-weight: 800;
+  font-style: normal;
+  color: white;
+}
+
+html {
+  width: var(--width);
+  height: var(--height);
+  border: 1px solid var(--white-gray);
+}
+
+body {
+  width: var(--width);
+  height: var(--height);
+  margin: 0;
+  background-color: var(--mdc-theme-background);
+}
+
+#contents, #wy24 {
+  width: var(--width - 24px);
+  height: calc(var(--height) - 54px);
+  padding: 25px;
+  padding-top: 56px;
+  padding-bottom: 0;
+}
+
+#footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  background: var(--mdc-theme-surface);
+}
+
+.logo {
+  width: 30px;
+  padding-left: 12px;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: var(--more-white-gray);
+}
+
+.option-box {
+  border: 1px solid var(--white-gray);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+#file-name {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 5px;
+  color: var(--more-white-gray)
+}
+
+.mdc-select:not(.mdc-select--disabled) .mdc-select__anchor {
+  background-color: var(--mdc-theme-surface);
+}
+
+.mdc-select__dropdown-icon {
+  filter: grayscale(1) invert(1);
+}
+
+.mdc-select:not(.mdc-select--disabled) .mdc-select__selected-text {
+  color: white;
+}
+
+.mdc-dialog .mdc-dialog__content {
+  color: white;
+}

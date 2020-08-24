@@ -19,20 +19,19 @@ function inject(path, type) {
 function codes() {
   chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
     let url = tabs[0].url;
-      chrome.storage.sync.get(['enabled', 'selectedTheme', 'fileData', 'plzClick'], function(result) {
+      chrome.storage.local.get(['enabled', 'selectedTheme', 'fileData'], function(result) {
         if(result.enabled == undefined) { //최초 실행 시
-          chrome.storage.sync.set({'enabled': true});
-          chrome.storage.sync.set({'selectedTheme': 1});
-          chrome.storage.sync.set({'plzClick': true});
+          chrome.storage.local.set({'enabled': true});
+          chrome.storage.local.set({'selectedTheme': 0});
         }
         if(result.enabled) {
           if(url.startsWith("https://playentry.org/ws")) {
           chrome.tabs.executeScript({file: "water.js"});
-          if(result.selectedTheme) {
-            if(result.selectedTheme == 1) {
+          if(result.selectedTheme > -1) {
+            if(result.selectedTheme == 0) {
               inject("default_theme/def_sans.css", "file");
               //inject("default_theme/def_dark.css", "file");
-            } else if (result.selectedTheme == 2) {
+            } else if (result.selectedTheme == 1) {
               inject("default_theme/def_mint_by_jwp0116.css", "file");
             } else {
               let code = result.fileData;
