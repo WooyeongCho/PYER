@@ -1,4 +1,12 @@
 # Pyer
+<div align=center>
+  
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FWooyeongCho%2FPyer&count_bg=%2379C83D&title_bg=%23555555&icon=ghostery.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
+</div>
+
+<br />
+
 ![logo](https://raw.githubusercontent.com/WooyeongCho/Pyer/master/icons/icon_48.png)
 <br />
 엔트리 만들기 페이지에 다크 테마와 민트 테마를 적용 시켜주는 크롬 확장앱입니다.
