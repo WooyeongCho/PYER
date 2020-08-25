@@ -600,7 +600,7 @@ div.item__a65d5:not(.disabled__a65d5) a {
   background-color: var(--background-color) !important;
 }
 
-.item__a65d5:hover {
+.item__a65d5:not(.color_list__a65d5 .item__a65d5):hover {
   background-color: var(--light-gray) !important;
 }
 
@@ -829,7 +829,7 @@ div#entryWorkspaceBoard svg g text tspan {
   background-color: var(--mid-gray) !important;
 }
 
-input {
+input:not(#inpt, .entryInputBox) {
   color: white !important;
 }
 
@@ -1088,4 +1088,16 @@ div.SizeChangeComp input.input
 /* 소리 편집 배경 */
 .entryPlaygroundSoundEdit {
   background-color: var(--background-color) !important;
+}
+
+.tooltip_box__a65d5, .tooltip_box__a65d5.color_picker__a65d5 .colorSlider__a65d5 .color_box__a65d5 .color__a65d5, .tooltip_box__a65d5.color_picker__a65d5 .colorSlider__a65d5 .color_box__a65d5 .color_list__a65d5 .item__a65d5 input[type='text'], .tooltip_box__a65d5.color_picker__a65d5 .colorSlider__a65d5 .color_graph__a65d5 .graph_list__a65d5 .item__a65d5 input[type='text'], .tooltip_box__a65d5.color_picker__a65d5 .colorSlider__a65d5 .color_box__a65d5 .color_list__a65d5 .item__a65d5 input[type='number'], .tooltip_box__a65d5.color_picker__a65d5 .colorSlider__a65d5 .color_graph__a65d5 .graph_list__a65d5 .item__a65d5 input[type='number'] {
+  border: 0 !important;
+}
+
+.tooltip_box__a65d5.color_picker__a65d5 .colorSlider__a65d5 .color_box__a65d5 .color_list__a65d5 .item__a65d5 input[type='text'], .tooltip_box__a65d5.color_picker__a65d5 .colorSlider__a65d5 .color_graph__a65d5 .graph_list__a65d5 .item__a65d5 input[type='text'], .tooltip_box__a65d5.color_picker__a65d5 .colorSlider__a65d5 .color_box__a65d5 .color_list__a65d5 .item__a65d5 input[type='number'], .tooltip_box__a65d5.color_picker__a65d5 .colorSlider__a65d5 .color_graph__a65d5 .graph_list__a65d5 .item__a65d5 input[type='number'] {
+  background-color: var(--light-gray) !important;
+}
+
+.tooltip_box__a65d5.color_picker__a65d5 .colorSlider__a65d5 .color_graph__a65d5 {
+  border-left: 0 !important;
 }

@@ -17,15 +17,15 @@ function inject(path, type) {
 }
 
 function codes() {
-  chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
-    let url = tabs[0].url;
+  // chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
+  //   let url = tabs[0].url;
       chrome.storage.local.get(['enabled', 'selectedTheme', 'fileData'], function(result) {
         if(result.enabled == undefined) { //최초 실행 시
           chrome.storage.local.set({'enabled': true});
           chrome.storage.local.set({'selectedTheme': 0});
         }
         if(result.enabled) {
-          if(url.startsWith("https://playentry.org/ws")) {
+          //if(url.startsWith("https://playentry.org/ws")) {
           chrome.tabs.executeScript({file: "water.js"});
           if(result.selectedTheme > -1) {
             if(result.selectedTheme == 0) {
@@ -48,7 +48,7 @@ function codes() {
             // `, "code")
           }
         }
-      }
+      //}
       });
-  });
+  //});
 }

@@ -4,11 +4,12 @@
   "version": "5.0",
   "description": "엔트리 만들기 페이지에 CSS 테마를 적용시킵니다.",
   "permissions": [
-    "activeTab",
-    "tabs",
     "storage",
     "unlimitedStorage",
-    "https://playentry.org/*"
+    "https://playentry.org/ws"
+  ],
+  "matches": [
+    "https://playentry.org/ws"
   ],
   "background": {
     "scripts": ["background.js"],
