@@ -35,7 +35,7 @@
 기본적으로 Pyer를 설치하면 다크 테마가 적용되어 있습니다.
 Pyer의 활성화 상태를 지정하거나 테마를 다른 테마 혹은 사용자 테마로 변경하고 싶다면 아래를 참고하세요.
 ### 팝업
-![popup](https://user-images.githubusercontent.com/29038818/91118500-0df37f80-e6cc-11ea-987f-f84ebfd82434.png)
+![popupsrc](https://user-images.githubusercontent.com/29038818/91635784-35cd4500-ea36-11ea-8375-c1a62adf7abb.png)
 브라우저 오른쪽 상단 ![logo](https://raw.githubusercontent.com/WooyeongCho/Pyer/master/icons/icon_48.png)를 클릭해 팝업을 여세요.
 |섹션|설명|
 |---|---|
