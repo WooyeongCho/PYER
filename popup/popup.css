@@ -55,7 +55,6 @@
 html {
   width: var(--width);
   height: var(--height);
-  border: 1px solid var(--white-gray);
 }
 
 body {
@@ -82,6 +81,7 @@ body {
   text-align: center;
   color: white;
   background: var(--mdc-theme-surface);
+  position: fixed;
 }
 
 .logo {

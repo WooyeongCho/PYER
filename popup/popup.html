@@ -9,6 +9,10 @@
 
       <m-header><h3>Pyer! <span class="subtitle">엔트리 테마 확장앱</span></h3></m-header>
       <div id="contents"> 
+        <br />
+
+        <m-button type="unelevated" id="save-button" style="position:fixed;"><m-icon>save</m-icon>설정 저장하기</m-button>
+
         <div class="option-box">
           <t-s title="켜기/끄기" subtitle="테마 활성화 상태를 설정합니다."></t-s>
           <m-switch id="onoff-switch"></m-switch>
@@ -28,8 +32,14 @@
         </div>
 
         <div class="option-box">
-          <t-s title="저장하기" subtitle="설정을 저장합니다."></t-s>
-          <m-button type="unelevated" id="save-button"><m-icon>save</m-icon>저장하기</m-button>
+          <t-s title="글꼴 선택하기" subtitle="엔트리에 적용할 글꼴을 선택합니다."></t-s>
+          <m-select id="font-select">
+            <m-select-list data-value="none">엔트리 기본 글꼴 (선택 안 함)</m-select-list>
+            <m-select-list data-value="NanumSquare">나눔 스퀘어</m-select-list>
+            <m-select-list data-value="NanumSquareRound">나눔 스퀘어 라운드</m-select-list>
+            <m-select-list data-value="S-CoreDream">에스코어 드림</m-select-list>
+            <m-select-list data-value="IBM">IBM Plex Sans</m-select-list>
+          </m-select>
         </div>
         
       </div>

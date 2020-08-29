@@ -1,0 +1,60 @@
+/* 나눔 스퀘어 */
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 400;
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareR.eot);
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareR.woff) format('woff'),
+    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareR.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 700;
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareB.eot);
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareB.woff) format('woff'),
+    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareB.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 800;
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareEB.eot);
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareEB.woff) format('woff'),
+    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareEB.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 300;
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareL.eot);
+  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareL.woff) format('woff'),
+    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareL.ttf) format('truetype');
+}
+
+/* 나눔 스퀘어 라운드 */
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 에스코어 드림 */
+@font-face {
+  font-family: 'S-CoreDream';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* IBM Plex Sans */
+@font-face {
+  font-family: 'IBM';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

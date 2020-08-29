@@ -28,7 +28,8 @@ const listRipple = new mdc.ripple.MDCRipple(document.querySelector('.mdc-list-it
 // switch
 const onOffSwitch = new MDCSwitch(document.querySelector('.mdc-switch'));
 // select
-const themeSelect = new MDCSelect(document.querySelector('.mdc-select'));
+const themeSelect = new MDCSelect(document.querySelector('#theme-select'));
+const fontSelect = new MDCSelect(document.querySelector('#font-select'));
 // dialog
 var dialog;
 // snackbar
@@ -78,6 +79,7 @@ $('#open-css').on('click', function () {
 $('#save-button').click(function () {
   chrome.storage.local.set({ 'enabled': onOffSwitch.checked });
   chrome.storage.local.set({ 'selectedTheme': themeSelect.selectedIndex });
+  chrome.storage.local.set({ 'fontName': fontSelect.foundation_.getValue() });
   //chrome.storage.sync.set({'selectedTheme': });
   snackbar.open()
 });
@@ -106,10 +108,13 @@ $("#file-input").change(function (event) {
 
 //themeSelect.foundation_.setSelectedIndex(2)
 
-chrome.storage.local.get(['enabled', 'selectedTheme', 'fileName'], function (result) {
+chrome.storage.local.get(['enabled', 'selectedTheme', 'fileName', 'fontName'], function (result) {
   if (result.enabled === undefined) { //최초 실행 시
     chrome.storage.local.set({ 'enabled': true });
-    chrome.storage.local.set({ 'selectedTheme': 0 });
+    chrome.storage.local.set({ 'selectedTheme': 0 }); 
+  }
+  if (result.fontName === undefined) {
+    chrome.storage.local.set({ 'fontName': 'none' });
   }
   if (result.fileName != undefined) {
     $('#file-name').text(`선택된 CSS 파일 : ${result.fileName}`);
@@ -119,6 +124,7 @@ chrome.storage.local.get(['enabled', 'selectedTheme', 'fileName'], function (res
   
   onOffSwitch.foundation_.setChecked(result.enabled)
   themeSelect.foundation_.setSelectedIndex(result.selectedTheme);
+  fontSelect.foundation_.setValue(result.fontName)
 });
 
 

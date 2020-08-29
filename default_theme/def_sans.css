@@ -12,47 +12,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap'); */
 
 /* @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff'); */
-@font-face {
-  font-family: 'NanumSquare';
-  font-weight: 400;
-  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareR.eot);
-  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareR.eot?#iefix) format('embedded-opentype'),
-    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareR.woff) format('woff'),
-    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareR.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'NanumSquare';
-  font-weight: 700;
-  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareB.eot);
-  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareB.eot?#iefix) format('embedded-opentype'),
-    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareB.woff) format('woff'),
-    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareB.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'NanumSquare';
-  font-weight: 800;
-  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareEB.eot);
-  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
-    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareEB.woff) format('woff'),
-    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareEB.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'NanumSquare';
-  font-weight: 300;
-  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareL.eot);
-  src: url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareL.eot?#iefix) format('embedded-opentype'),
-    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareL.woff) format('woff'),
-    url(https://cdn.rawgit.com/moonspam/NanumSquare/master/NanumSquareL.ttf) format('truetype');
-}
-
-* {
-  font-family: 'NanumSquare' !important;
-  font-weight: 500;
-  font-style: normal;
-}
 
 :root {
   --primary-color: #d34aff;
@@ -344,6 +303,7 @@ input.entryObjectNameWorkspace,
 {
   background-color: var(--white-gray) !important;
   border: 0 !important;
+  color: white !important;
 }
 
 /* 이동방향 속성 칸 */
@@ -590,17 +550,18 @@ div.disabled__a65d5 {
   color: var(--white-gray) !important;
 }
 
-/* 우클릭 화면, 툴팁 - 활성화 */
-div.item__a65d5:not(.disabled__a65d5),
-div.item__a65d5:not(.disabled__a65d5) a {
-  color: var(--more-white-gray) !important;
+/* 우클릭 화면, 툴팁 - 활성화 recommendedColor__a65d5 */
+div:not(.paletteGroup__a65d5):not(.recommendedColor__a65d5) > .item__a65d5:not(.disabled__a65d5),
+div:not(.paletteGroup__a65d5):not(.recommendedColor__a65d5) > .item__a65d5:not(.disabled__a65d5) a {
+  color: var(--more-white-gray) !important; 
 }
 
-.item__a65d5 {
+div:not(.paletteGroup__a65d5):not(.recommendedColor__a65d5) > .item__a65d5
+ {
   background-color: var(--background-color) !important;
 }
 
-.item__a65d5:not(.color_list__a65d5 .item__a65d5):hover {
+div:not(.paletteGroup__a65d5):not(.recommendedColor__a65d5) > .item__a65d5:not(.color_list__a65d5):hover {
   background-color: var(--light-gray) !important;
 }
 
@@ -989,6 +950,10 @@ button.dSwlSA {
   background-color: var(--light-gray) !important;
 }
 
+.withControlBtnWrapper  {
+  background-color: var(--dark-gray) !important;
+}
+
 /* 2번째 바의 버튼들*/
 .withControlBtnWrapper span {
   color: white !important;
@@ -1100,4 +1065,16 @@ div.SizeChangeComp input.input
 
 .tooltip_box__a65d5.color_picker__a65d5 .colorSlider__a65d5 .color_graph__a65d5 {
   border-left: 0 !important;
+}
+
+/*ㅁㄴㅇㄹ*/
+.tooltip_box__a65d5.color_picker__a65d5 .colorSlider__a65d5 .color_box__a65d5 .color_list__a65d5 .item__a65d5 input[type='text'], .tooltip_box__a65d5.color_picker__a65d5 .colorSlider__a65d5 .color_graph__a65d5 .graph_list__a65d5 .item__a65d5 input[type='text'], .tooltip_box__a65d5.color_picker__a65d5 .colorSlider__a65d5 .color_box__a65d5 .color_list__a65d5 .item__a65d5 input[type='number'], .tooltip_box__a65d5.color_picker__a65d5 .colorSlider__a65d5 .color_graph__a65d5 .graph_list__a65d5 .item__a65d5 input[type='number'] {
+  color: white !important;
+}
+
+/* 색상 프리셋 칸 */
+.tooltip_box__a65d5.color_picker__a65d5 .colorSwatches__a65d5 .recommendedColor__a65d5 .item__a65d5,
+.tooltip_box__a65d5.color_picker__a65d5 .colorSwatches__a65d5 .paletteColor__a65d5 .paletteGroup__a65d5 .item__a65d5 {
+  border: 0 !important;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
 }

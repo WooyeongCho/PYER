@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Pyer",
-  "version": "5.1",
+  "version": "5.5",
   "description": "엔트리 만들기 페이지에 CSS 테마를 적용시킵니다.",
   "permissions": [
     "storage",
@@ -16,7 +16,7 @@
     "persistent": false
   },
   "browser_action": {
-    "default_icon": "icons/icon_.png",
+    "default_icon": "icons/icon_128.png",
     "default_title": "Pyer",
     "default_popup": "popup/popup.html"
   },
