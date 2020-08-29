@@ -10,6 +10,7 @@
 ![logo](https://raw.githubusercontent.com/WooyeongCho/Pyer/master/icons/icon_48.png)
 <br />
 엔트리 만들기 페이지에 다크 테마와 민트 테마를 적용 시켜주는 크롬 확장앱입니다.
+또한 사용자의 CSS 파일을 불러와 사용자 테마를 적용시키거나, 엔트리 페이지의 전체 글꼴을 변경할 수 있습니다.
 
 ## 스크린샷
 ![sc1](https://user-images.githubusercontent.com/29038818/91118448-f1efde00-e6cb-11ea-8180-5fe30f09dbeb.png)
@@ -39,16 +40,24 @@ Pyer의 활성화 상태를 지정하거나 테마를 다른 테마 혹은 사�
 브라우저 오른쪽 상단 ![logo](https://raw.githubusercontent.com/WooyeongCho/Pyer/master/icons/icon_48.png)를 클릭해 팝업을 여세요.
 |섹션|설명|
 |---|---|
+|설정 저장하기|Pyer 설정을 저장합니다.<br/>저장 후엔 엔트리 만들기 페이지를 새로고침 하세요.|
 |켜기/끄기|스위치를 클릭 해 Pyer의 활성화 상태를 지정할 수 있습니다.|
 |테마 선택하기|dropdown 메뉴를 클릭 해 원하는 테마로 변경하세요.<br/>메뉴의 각 아이템에 대한 설명은 아래를 참고하세요.|
 |외부 CSS 테마 열기|파일탐색기로 외부 CSS 테마 파일을 선택할 수 있습니다.|
-|저장하기|Pyer 설정을 저장합니다.<br/>저장 후엔 엔트리 만들기 페이지를 새로고침 하세요.|
+|글꼴 선택하기|dropdown 메뉴를 클릭 해 원하는 글꼴로 변경하세요<br/>메뉴의 각 아이템에 대한 설명은 아래를 참고하세요.|
+
 ### 테마
 |테마|파일 명|설명|
 |---|---|---|
 |다크 테마|default_theme/def_sans.css|tica님과 함께 제작|
 |민트 테마|default_theme/def_mint_by_jwp0116.css|jedeop님이 제작|
 |외부 CSS 테마|chrome local storage 내 fileData와 fileName|사용자가 선택한 외부 CSS 테마 (파일 명과 내용을 저장)|
+### 글꼴
+- 엔트리 기본 글꼴 (프로그램 default)
+- 나눔 스퀘어
+- 나눔 스퀘어 라운드
+- 에스코어 드림
+- IBM Plex Sans
 
 ## 도움 주신 분
 큰 도움이 되었습니다. 감사드립니다.
