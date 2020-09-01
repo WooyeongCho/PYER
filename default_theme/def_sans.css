@@ -1078,3 +1078,114 @@ div.SizeChangeComp input.input
   border: 0 !important;
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
 }
+
+/* 엔트리 파이선 */
+
+div.CodeMirror-linenumber { /* 엔트리 파이썬 코드 라인 숫자 표시란 */
+  background-color: var(--dark-gray) !important;
+  border-right: 0 !important;
+}
+
+div.CodeMirror-gutters { /* 엔트리 파이썬 코드 라인 */
+  background-color: var(--dark-gray) !important;
+  border-right: 0 !important;
+}
+/* 
+div.CodeMirror-scroll { 
+  background-color: var(--back) !important;
+} 
+*/
+
+.CodeMirror {
+  background-color: var(--dark-gray) !important;
+}
+
+
+.CodeMirror pre {
+  padding: 3px 5px !important;
+}
+
+.CodeMirror-cursor {
+  border: 1px solid white !important;
+  background-color: white !important;
+}
+
+pre.CodeMirror-line > span {
+  color: #ffffff !important;
+}
+
+div.CodeMirror-activeline-background {
+  background-color: #373737 !important;
+}
+
+div.CodeMirror-selected {
+  background-color: #505050 !important;
+}
+
+span.cm-def {
+  color: #feffd2 !important;
+}
+
+span.cm-string {
+  color: #eb9f73 !important;
+}
+
+span.cm-number {
+  color: #8ef7a7 !important
+}
+
+span.cm-keyword {
+  color: #f781f7 !important
+}
+
+span.cm-variable {
+  color: #87d4f3 !important
+}
+
+span.cm-builtin {
+  color: #f8755b !important
+}
+
+span.cm-property {
+  color: #799be6 !important
+}
+
+span.cm-comment {
+  color: #61ac74 !important;
+}
+
+/* span.cm-def {
+  color: #508ff4 !important;
+}
+
+span.cm-string {
+  color: #7fdb8f !important;
+}
+
+span.cm-number {
+  color: #e27963 !important
+}
+
+span.cm-keyword {
+  color: #b56ef0 !important
+}
+
+span.cm-variable {
+  color: white !important
+}
+
+span.cm-builtin {
+  color: #e27963 !important
+}
+
+span.cm-operator {
+  color: #87b8ed !important;
+}
+
+span.cm-property {
+  color: #60ecff !important
+}
+
+span.cm-comment {
+  color: #438648 !important;
+} */
