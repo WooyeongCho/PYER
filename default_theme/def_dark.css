@@ -320,3 +320,101 @@ div.rotationMethodWrapper {
   border: 0px solid black;
 }
 
+.sjt__a65d5 {
+    filter: brightness(0) invert(1);
+    font-size: 1.1rem !important;
+}
+
+.list__a65d5 li {
+    background: var(--background-color) !important;
+    color: white !important;
+}
+
+.list__a65d5 li.on__a65d5 .link__a65d5:after {
+    border: 1px solid var(--primary-color) !important;
+}
+
+.data_selbox__a65d5 .list__a65d5 li.on__a65d5 {
+    border: 1px solid var(--primary-color) !important;
+}
+.list__a65d5 li {
+    box-sizing: border-box !important;;
+}
+
+.list__a65d5 li .link__a65d5:after {
+    border: 1px solid var(--more-white-gray);
+}
+
+.thmb__a65d5 {
+    background-color: var(--dark-gray) !important;
+}
+
+.fields__a65d5 {
+    color: #ddd !important;
+}
+
+.info2__a65d5 {
+    color: #ddd !important;
+}
+
+.text_link__a65d5 {
+    color: var(--primary-color) !important;
+}
+
+.dsc__a65d5 {
+    color: #ddd !important;
+}
+
+.Alert-cssmodule-title-ClGEe {
+    background: var(--primary-color) !important;
+    border-radius: 10px 10px 0px 0px !important;
+}
+
+.Alert-cssmodule-button-1h3uT {
+    background: var(--primary-color) !important;
+    border-radius: 1000px !important;
+    border: none !important;
+}
+
+.Alert-cssmodule-alert-3NLow {
+    background: var(--background-color) !important;
+    border-radius: 10px !important;
+}
+
+.Alert-cssmodule-content-22BZW {
+    color: white !important;
+}
+
+.Alert-cssmodule-content-22BZW > textarea {
+    padding: 0 !important;
+    border: none !important;
+    color: white !important;
+    min-height: 100px !important;
+}
+
+.Confirm-cssmodule-title-35Vpd {
+    background: var(--primary-color) !important;
+    border-radius: 10px 10px 0px 0px !important;
+}
+
+.Confirm-cssmodule-content-NqT8W {
+    color: white !important;
+  
+}
+
+.Confirm-cssmodule-confirm-FbkMi {
+    background: var(--background-color) !important;
+    border-radius: 10px !important;
+}
+
+.Confirm-cssmodule-button-31i1a {
+    background: var(--primary-color) !important;
+    border-radius: 1000px !important;
+    border: none !important;
+}
+
+.Confirm-cssmodule-cancelButton-2bdHa {
+    background: white !important;
+    border: 1px solid var(--primary-color) !important;
+    color: var(--primary-color) !important;
+}
