@@ -866,7 +866,7 @@ input:not(#inpt, .entryInputBox) {
 
 /* 테이블 버튼 들 */
 .entryVariableSelectButtonWorkspace div:before {
-  filter: brightness(1000%);
+  filter: brightness(0) invert(1);
 }
 
 /* 변수 버튼 아이콘 */
