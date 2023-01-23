@@ -1,4 +1,5 @@
 // by wy24
+console.log("이건머냐")
 
 let version = "";
 //var vm = new Vue;

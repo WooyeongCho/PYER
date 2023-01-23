@@ -6,13 +6,13 @@
   <body>
     <div id="app">
       <input id="file-input" type="file" accept=".css" name="name" style="display: none;" />
-
+    
       <m-header><h3>Pyer! <span class="subtitle">엔트리 테마 확장앱</span></h3></m-header>
       <div id="contents"> 
         <br />
-
+    
         <m-button type="unelevated" id="save-button" style="position:fixed;"><m-icon>save</m-icon>설정 저장하기</m-button>
-
+    
         <div class="option-box">
           <t-s title="켜기/끄기" subtitle="테마 활성화 상태를 설정합니다."></t-s>
           <m-switch id="onoff-switch"></m-switch>
@@ -23,6 +23,7 @@
           <m-select id="theme-select">
             <m-select-list data-value="dark">다크 테마</m-select-list>
             <m-select-list data-value="mint">민트 테마 (제덮 제작)</m-select-list>
+            <m-select-list data-value="sepia">세피아 테마</m-select-list>
             <m-select-list data-value="imported">외부 CSS 테마</m-select-list>
           </m-select>
           <br />
@@ -30,7 +31,7 @@
             <m-button type="unelevated" id="open-css"><m-icon>insert_drive_file</m-icon>외부 CSS 테마 열기</m-button>
           </input>
         </div>
-
+    
         <div class="option-box">
           <t-s title="글꼴 선택하기" subtitle="엔트리에 적용할 글꼴을 선택합니다."></t-s>
           <m-select id="font-select">
@@ -39,27 +40,34 @@
             <m-select-list data-value="NanumSquareRound">나눔 스퀘어 라운드</m-select-list>
             <m-select-list data-value="S-CoreDream">에스코어 드림</m-select-list>
             <m-select-list data-value="IBM">IBM Plex Sans</m-select-list>
+            <m-select-list data-value="Pretendard"><span class="new-icon">new</span> Pretendard</m-select-list>
+            <m-select-list data-value="NanumSquareNeo"><span class="new-icon">new</span> 나눔 스퀘어 네오</m-select-list>
+            <m-select-list data-value="NanumBarunpen"><span class="new-icon">new</span> 나눔바른펜</m-select-list>
           </m-select>
+
         </div>
-        
       </div>
       <m-dialog id="github-repo-dialog">Pyer Github Repository로 이동할까요?</m-dialog>
       <m-dialog id="store-dialog">Pyer 크롬 웹스토어로 이동할까요?</m-dialog>
       <save-snackbar></save-snackbar>
-
+    
       <div id="footer">
         <p style='margin: 0; font-weight: 600;'>개발 wy24 도움 tica, jedeop | <span id="version"></span> 버전</p>
       </div>
     </div>
-
+    
     <script src="src/jquery/jquery-3.3.1.js"></script>
     <script src="src/mdc/mdc.min.js"></script>
     <link href="src/mdc/mdc.min.css" rel="stylesheet">
     
-    <script src="src/vue/vue.js"></script>
-    <script src="vue-components.js"></script>
-    <link rel="stylesheet" href="popup.css">
+    <!-- <script src="src/vue/vue.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script> -->
+    <!-- <script src="vue-components.js"></script> -->
+    <script src="renderer.js"></script>
     <script src="popup.js"></script>
+    <link rel="stylesheet" href="popup.css">
+    
     <link href="src/mdc/icon.css" rel="stylesheet">
+    
   </body>
 </html>

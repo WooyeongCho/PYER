@@ -14,11 +14,17 @@
 }
 
 /* 헤더 색상 */
-header, .entrySceneWorkspace {
+div#common_srch {
   background-color: var(--main-color) !important;
 }
+
+/* 헤더 장면 배경 */
+.entrySceneWorkspace {
+  background-color: var(--main-color) !important;
+}
+
 /* 헤더 버튼들 색상 */
-.btn_work_space, .common_gnb .group_box .lang_select_box .select_link {
+.btn_work_space, .common_gnb .group_box .lang_select_box .select_link, a.e182ojvz1, div.css-slznqk {
   border-color: var(--light2-color) !important;
   background-color: var(--light-color) !important;
 }
@@ -33,7 +39,7 @@ header, .entrySceneWorkspace {
 .workspace, .entryPlaygroundWorkspace, .entryPlaygroundTabWorkspace, .entryPlaygroundButtonTabWorkspace, .entryContainerListWorkspaceWrapper {
   background-color: var(--light3-color) !important;
 }
-/* 주석 달기 귀찮네요.. 그러므로 더이상 적지 않겠습니ㄷ.. */
+/* 주석 달기 귀찮네요.. 그러므로 더이상 적지 않겠습니ㄷ.. (2023_01_23 냥이): 이걸 지금 봤네요.. 주석 달기 귀찮은거 ㅇㅈ합니다.*/
 .entryTabListItemWorkspace {
   background-color: var(--light-sub-color) !important;
 }

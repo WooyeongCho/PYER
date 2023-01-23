@@ -9,11 +9,20 @@
 
 ![logo](https://raw.githubusercontent.com/WooyeongCho/Pyer/master/icons/icon_48.png)
 <br />
-엔트리 만들기 페이지에 다크 테마와 민트 테마를 적용 시켜주는 크롬(크로미움),  확장앱입니다.
-또한 사용자의 CSS 파일을 불러와 사용자 테마를 적용시키거나, 엔트리 페이지의 전체 글꼴을 변경할 수 있습니다.
+엔트리 만들기 페이지에 테마를 적용 시켜주는 크롬 확장앱입니다.
+또한 CSS 파일을 불러와 사용자 테마를 적용시키거나, 엔트리 만들기 페이지의 글꼴을 변경할 수 있습니다.
 
 ## 스크린샷
 ![sc1](https://user-images.githubusercontent.com/29038818/91118448-f1efde00-e6cb-11ea-8180-5fe30f09dbeb.png)
+
+## 업데이트 내역
+### v6.0
+- 다크 테마 오류 개선
+- 새로운 폰트 3종 (Pretendard, 나눔 스퀘어 네오, 나눔바른펜) 추가.
+- 세피아 테마 추가.
+- 엔트리 만들기 페이지에 추가되는 워터마크 디자인 변경.
+- manifest v3으로 마이그레이션.
+- popup.html을 render할 때 사용되던 vue.js 제거, popup/renderer.js로 그 역할을 대체.
 
 ## 설치하기
 ### 크롬 확장앱 스토어에서 설치하기
@@ -22,8 +31,8 @@
 - 크롬 확장앱 스토어에서 설치하면 쉽고 빠르게 브라우저에 Pyer를 추가할 수 있습니다.
 - 단, Pyer의 새로운 버전이 업데이트 되어도 새 버전이 스토어에 퍼블리시 될 때까지 약간의 시간이 소요되기에 빠른 업데이트를 받아볼 수 없습니다.
 
-### 파이어폭스 애드온 스토어에서 설치하기
-[설치하기](http://bit.ly/entry_pyerfox)
+<!-- ### 파이어폭스 애드온 스토어에서 설치하기
+[설치하기](http://bit.ly/entry_pyerfox) -->
 
 ### 직접 설치하기
 [ZIP 다운로드하기](https://github.com/WooyeongCho/Pyer/archive/master.zip)
@@ -54,6 +63,7 @@ Pyer의 활성화 상태를 지정하거나 테마를 다른 테마 혹은 사�
 |---|---|---|
 |다크 테마|default_theme/def_sans.css|tica님과 함께 제작|
 |민트 테마|default_theme/def_mint_by_jwp0116.css|jedeop님이 제작|
+|세피아 테마|default_theme/def_sepia.css|다크 테마를 기본으로 하여 제작|
 |외부 CSS 테마|chrome local storage 내 fileData와 fileName|사용자가 선택한 외부 CSS 테마 (파일 명과 내용을 저장)|
 ### 글꼴
 - 엔트리 기본 글꼴 (프로그램 default)
@@ -61,8 +71,11 @@ Pyer의 활성화 상태를 지정하거나 테마를 다른 테마 혹은 사�
 - 나눔 스퀘어 라운드
 - 에스코어 드림
 - IBM Plex Sans
+- Pretendard (v6.0에서 추가됨)
+- 나눔 스퀘어 네오 (v6.0에서 추가됨)
+- 나눔바른펜 (v6.0에서 추가됨)
 
-## 도움 주신 분
+## 기여
 큰 도움이 되었습니다. 감사드립니다.
 - [tica](https://github.com/thoratica)님
   + 다크 테마 개선 참여
@@ -70,31 +83,6 @@ Pyer의 활성화 상태를 지정하거나 테마를 다른 테마 혹은 사�
   + 민트 테마 제작
 
 ## 사용된 오픈 소스
-- [vuejs](https://github.com/vuejs/vue)
+- [vuejs](https://github.com/vuejs/vue) (5.6 버전 이하에서만 사용됨, popup/renderer.js에서 관련 역할을 담당합니다.)
 - [jquery](https://github.com/jquery/jquery)
 - [material design component](https://github.com/material-components/material-components-web/)
-
-## License
-```
-MIT License
-
-Copyright (c) 2020 WooyeongCho
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```

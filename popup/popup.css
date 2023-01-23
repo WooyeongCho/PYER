@@ -36,7 +36,7 @@
   --white-gray: #5f5f5f;
   --more-white-gray: #929292;
   --width: 440px;
-  --height: 590px;
+  --height:590px;
 }
 
 .mdc-top-app-bar {
@@ -62,6 +62,13 @@ body {
   height: var(--height);
   margin: 0;
   background-color: var(--mdc-theme-background);
+}
+
+.new-icon {
+  background-color: var(--mdc-theme-primary);
+  padding: 2px 6px 2px 6px;
+  border-radius: 12px;
+  font-weight: lighter;
 }
 
 #contents, #wy24 {

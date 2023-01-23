@@ -1,21 +1,22 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Pyer",
-  "version": "5.6",
+  "version": "6.0",
   "description": "엔트리 만들기 페이지에 CSS 테마를 적용시킵니다.",
   "permissions": [
     "storage",
     "unlimitedStorage",
-    "https://playentry.org/ws"
+    "scripting",
+    "tabs"
   ],
-  "matches": [
+
+  "host_permissions": [
     "https://playentry.org/ws"
   ],
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "background.js"
   },
-  "browser_action": {
+  "action": {
     "default_icon": "icons/icon_128.png",
     "default_title": "Pyer",
     "default_popup": "popup/popup.html"
@@ -26,5 +27,8 @@
     "128": "icons/icon_128.png",
     "1024": "icons/icon_1024.png"
   },
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'" 
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+  
 }

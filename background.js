@@ -8,20 +8,36 @@ const getCssByFont = (fontName) => {
   }`
 }
 
-chrome.tabs.onUpdated.addListener(function (t) {
-  codes();
+chrome.tabs.onUpdated.addListener(function (t) {  
+  checkEntryWS();
 });
+
 
 chrome.tabs.onActivated.addListener(function (tt) {
-  codes();
+  checkEntryWS();
 });
 
+// 엔트리 만들기 페이지인지 확인 후 코드 실행
+function checkEntryWS() {
+  chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
+    if(tabs[0].url.startsWith('https://playentry.org/ws')) {codes();}
+  });
+}
+
 function inject(path, type) {
-  if(type == "file") {
-    chrome.tabs.insertCSS({file: path, runAt: "document_end"});
-  } else {
-    chrome.tabs.insertCSS({code: path, runAt: "document_end"});
-  }
+  var PYER_VERSION = chrome.runtime.getManifest().version;
+  chrome.tabs.query({active:true, currentWindow: true}, function(tabs) {
+    if(tabs[0].id) { 
+      if(type == "file") {
+        chrome.scripting.insertCSS({target: {tabId: tabs[0].id}, files: [path]});
+      } else {
+        chrome.scripting.insertCSS({css: path, target: {tabId: tabs[0].id}});
+      }
+
+      chrome.scripting.executeScript({target: {tabId: tabs[0].id}, func: addWater, args: [PYER_VERSION]});
+    }
+  })
+  
 }
 
 function codes() {
@@ -44,12 +60,16 @@ function codes() {
           }
         
           //if(url.startsWith("https://playentry.org/ws")) {
-          chrome.tabs.executeScript({file: "water.js"});
+          
+          //chrome.tabs.executeScript({file: "water.js"});
+          //chrome.scripting.executeScript({file: "water.js"});
           if(result.selectedTheme > -1) {
             if(result.selectedTheme == 0) {
               inject("default_theme/def_sans.css", "file");
             } else if (result.selectedTheme == 1) {
               inject("default_theme/def_mint_by_jwp0116.css", "file");
+            } else if (result.selectedTheme == 2) {
+              inject("default_theme/def_sepia.css", "file");
             } else {
               let code = result.fileData;
               inject(code, "code");
@@ -69,3 +89,43 @@ function codes() {
       });
   //});
 }
+
+// 워터마크 삽입
+
+function addWater (version) {
+  let elementExists = document.getElementById("water_pyer");
+  if(!elementExists) {  
+    var header = document.getElementById( 'common_srch' );
+    var str = `
+    <div id="water_pyer" title="Pyer Github Repository로 이동하기" OnClick="window.open('https://github.com/WooyeongCho/Pyer')", '_blank');" style="float: left; position:absolute; top: 13px; left: 320px;">
+      <img src="https://i.ibb.co/PGCf9RG/icon-128.png" alt="icon-128" border="0" style="width: 22px; height: 22px;">
+      <span style="color:white; font-size: 16px; font-weight:bold;" id="pyer">Pyer v.${version}</span> 
+    </div>
+
+    <style>
+    #water_pyer {
+      top: 7px !important; 
+      padding: 3px;
+      padding-left: 5px;
+      padding-right: 5px;
+      border-radius: 10px;
+      background-color: rgba(255,255,255,0.1);
+      border: 2px solid rgba(255,255,255,0.125);
+      transition-duration: 0.3s;
+    }
+    
+    #water_pyer:hover {
+      transition-duration: 0.3s;
+      background-color: rgba(255,255,255,0.3);
+      border: 2px solid rgba(255,255,255,0.325);
+      box-shadow: 0px 2px 6px rgba(255,255,255,0.2);
+    }
+    
+    </style>
+    `;
+    
+    header.insertAdjacentHTML( 'beforeend', str );
+  }
+}
+
+//<span style="color:#787878; font-size: 14px; float: right; margin-left:10px; margin-top:2px; font-weight:bold;" id="pyer_sub">개발 <a href="https://github.com/WooyeongCho" style="color:#d34aff;" target="_blank" id="pyer_dev">wy24</a> 도움 <a href="https://github.com/thoratica" style="color:#d34aff;" target="_blank" id="pyer_sup">tica</a>, <a href="https://github.com/jedeop" style="color:#d34aff;" target="_blank" id="pyer_sup">jedoep</a></span>
