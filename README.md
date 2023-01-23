@@ -81,6 +81,8 @@ Pyer의 활성화 상태를 지정하거나 테마를 다른 테마 혹은 사�
   + 다크 테마 개선 참여
 - [jedeop](https://github.com/jedeop)님
   + 민트 테마 제작
+- [muno9748](https://github.com/muno9748)님
+  + 다크 테마 개선 도움
 
 ## 사용된 오픈 소스
 - [vuejs](https://github.com/vuejs/vue) (5.6 버전 이하에서만 사용됨, popup/renderer.js에서 관련 역할을 담당합니다.)
