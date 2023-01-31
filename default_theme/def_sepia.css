@@ -187,7 +187,10 @@ div#entryButtonTab {
 
 /* 장면 목록 */
 div.entryScene {
-  background-color: var(--background-color);
+  background-color: var(--background-color) !important;
+}
+.entryTopFloatingView .entrySceneWorkspace {
+  background-color: var(--background-color) !important;
 }
 
 /* 장면 추가 버튼 */
@@ -199,6 +202,27 @@ span.entrySceneAddButtonWorkspace {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSLroIjsnbTslrRfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IgoJIHk9IjBweCIgdmlld0JveD0iMCAwIDMwIDMwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMCAzMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM4MzgzODM7fQo8L3N0eWxlPgo8Zz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNSwwQzYuNzIsMCwwLDYuNzIsMCwxNWMwLDguMjgsNi43MiwxNSwxNSwxNXMxNS02LjcyLDE1LTE1QzMwLDYuNzIsMjMuMjgsMCwxNSwweiBNMjIuNSwxNi41aC02djYKCQljMCwwLjgzLTAuNjcsMS41LTEuNSwxLjVzLTEuNS0wLjY3LTEuNS0xLjV2LTZoLTZDNi42NywxNi41LDYsMTUuODMsNiwxNXMwLjY3LTEuNSwxLjUtMS41aDZ2LTZDMTMuNSw2LjY3LDE0LjE3LDYsMTUsNgoJCXMxLjUsMC42NywxLjUsMS41djZoNmMwLjgzLDAsMS41LDAuNjcsMS41LDEuNVMyMy4zMywxNi41LDIyLjUsMTYuNXoiLz4KPC9nPgo8L3N2Zz4K);
   background-size: 20px auto;
 }
+
+/* 블록 개수 알림창 배경 */
+.entryTopFloatingView .entryBlockCountView {
+  background-color: var(--background-color) !important;
+}
+
+/* 블록 개수 알림창 */
+.entryTopFloatingView .entryBlockCountView .blockCountView{
+  background-color: var(--light-gray) !important;
+  color: var(--most-white-gray) !important;
+}
+
+/* 코드 조립소 안에 있는 블록 개수 알림창 */
+.svgObjectBlockCount rect {
+  fill: var(--light-gray) !important;
+  stroke: var(--white-gray) !important;
+}
+.svgObjectBlockCount text {
+  fill: var(--most-white-gray) !important;
+}
+
 
 /* 
 
