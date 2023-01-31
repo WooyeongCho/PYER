@@ -16,13 +16,7 @@
 ![sc1](https://user-images.githubusercontent.com/29038818/91118448-f1efde00-e6cb-11ea-8180-5fe30f09dbeb.png)
 
 ## 업데이트 내역
-### v6.0
-- 다크 테마 오류 개선
-- 새로운 폰트 3종 (Pretendard, 나눔 스퀘어 네오, 나눔바른펜) 추가.
-- 세피아 테마 추가.
-- 엔트리 만들기 페이지에 추가되는 워터마크 디자인 변경.
-- manifest v3으로 마이그레이션.
-- popup.html을 render할 때 사용되던 vue.js 제거, popup/renderer.js로 그 역할을 대체.
+[Pyer 크롬 웹스토어](https://bit.ly/entry_pyer)의 설명창에서 확인할 수 있습니다.
 
 ## 설치하기
 ### 크롬 확장앱 스토어에서 설치하기
