@@ -97,7 +97,7 @@ function addWater (version) {
     }
 
     #water_pyer * {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Montserrat', sans-serif !important;
     }
 
     .noselect {
