@@ -8,41 +8,11 @@ const getCssByFont = (fontName) => {
   }`
 }
 
-chrome.tabs.onUpdated.addListener(function (t) {  
-  checkEntryWS();
-});
 
-
-chrome.tabs.onActivated.addListener(function (tt) {
-  checkEntryWS();
-});
-
-// 엔트리 만들기 페이지인지 확인 후 코드 실행
-function checkEntryWS() {
-  chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
-    if(tabs[0].url.startsWith('https://playentry.org/ws')) {codes();}
-  });
-}
-
-function inject(path, type) {
-  var PYER_VERSION = chrome.runtime.getManifest().version;
-  chrome.tabs.query({active:true, currentWindow: true}, function(tabs) {
-    if(tabs[0].id) { 
-      if(type == "file") {
-        chrome.scripting.insertCSS({target: {tabId: tabs[0].id}, files: [path]});
-      } else {
-        chrome.scripting.insertCSS({css: path, target: {tabId: tabs[0].id}});
-      }
-
-      chrome.scripting.executeScript({target: {tabId: tabs[0].id}, func: addWater, args: [PYER_VERSION]});
-    }
-  })
-  
-}
-
-function codes() {
-  // chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
-  //   let url = tabs[0].url;
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+  if (tab.url.startsWith('https://playentry.org/ws')) {
+    if (changeInfo.status === "loading") {
+      
       chrome.storage.local.get(['enabled', 'selectedTheme', 'fileData', 'fontName'], function(result) {
         if(result.enabled == undefined) { //최초 실행 시
           chrome.storage.local.set({'enabled': true});
@@ -58,11 +28,8 @@ function codes() {
             inject("default_theme/fonts.css", "file");
             inject(getCssByFont(result.fontName), "code");
           }
-        
-          //if(url.startsWith("https://playentry.org/ws")) {
           
-          //chrome.tabs.executeScript({file: "water.js"});
-          //chrome.scripting.executeScript({file: "water.js"});
+          // 주입
           if(result.selectedTheme > -1) {
             if(result.selectedTheme == 0) {
               inject("default_theme/def_sans.css", "file");
@@ -72,22 +39,29 @@ function codes() {
               inject("default_theme/def_sepia.css", "file");
             } else {
               let code = result.fileData;
-              inject(code, "code");
+               inject(code, "code");
             }
-            // inject(`button,li:not(.entryContainerListElementWorkspace),a {
-
-            //   transition: filter .2s;
-            // }
-            
-            // button:hover,li:not(.entryContainerListElementWorkspace):hover,a:hover {
-            //   filter: brightness(80%);
-            // }
-            // `, "code")
           }
-        }
-      //}
+         }
       });
-  //});
+    } else {
+      var PYER_VERSION = chrome.runtime.getManifest().version;
+      chrome.scripting.executeScript({target: {tabId: tabId}, func: addWater, args: [PYER_VERSION]});
+    }
+  }
+})
+
+function inject(path, type) {
+  chrome.tabs.query({active:true, currentWindow: true}, function(tabs) {
+    if(tabs[0].id) { 
+      if(type == "file") {
+        chrome.scripting.insertCSS({target: {tabId: tabs[0].id}, files: [path]});
+      } else {
+        chrome.scripting.insertCSS({css: path, target: {tabId: tabs[0].id}});
+      }
+    }
+  })
+  
 }
 
 // 워터마크 삽입

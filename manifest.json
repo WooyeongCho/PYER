@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Pyer",
-  "version": "6.1",
-  "description": "엔트리 만들기 페이지에 CSS 테마를 적용시킵니다.",
+  "name": "PYER: 엔트리 테마",
+  "version": "6.2.0",
+  "description": "엔트리 만들기 페이지에 다양한 테마와 글꼴을 적용시켜주는 크롬 확장 프로그램입니다.",
   "permissions": [
     "storage",
     "unlimitedStorage",
@@ -30,5 +30,4 @@
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'"
   }
-  
 }
