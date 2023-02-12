@@ -13,7 +13,7 @@
 또한 CSS 파일을 불러와 사용자 테마를 적용시킬 수 있습니다.
 
 ## 스크린샷
-![sc1](https://user-images.githubusercontent.com/29038818/91118448-f1efde00-e6cb-11ea-8180-5fe30f09dbeb.png)
+![sc1](https://i.ibb.co/C1S3GGd/playentry-org-ws-63ce91b011ec0b001a5632cb-1.png)
 
 ## 업데이트 내역
 [PYER 크롬 웹스토어](https://bit.ly/entry_pyer)의 설명창에서 확인할 수 있습니다.
