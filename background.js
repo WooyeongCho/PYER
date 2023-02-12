@@ -71,14 +71,15 @@ function addWater (version) {
   if(!elementExists) {  
     var header = document.getElementById( 'common_srch' );
     var str = `
-    <div id="water_pyer" title="Pyer Github Repository로 이동하기" OnClick="window.open('https://github.com/WooyeongCho/Pyer')", '_blank');" style="float: left; position:absolute; top: 13px; left: 320px;">
-      <img src="https://i.ibb.co/PGCf9RG/icon-128.png" alt="icon-128" border="0" style="width: 22px; height: 22px;">
-      <span style="color:white; font-size: 16px; font-weight:bold;" id="pyer">Pyer v.${version}</span> 
+    <div class="noselect" id="water_pyer" title="PYER Github Repository로 이동하기" OnClick="window.open('https://github.com/WooyeongCho/PYER')", '_blank');" style="float: left; position:absolute; top: 13px; left: 320px;">
+      <img src="https://i.ibb.co/PGCf9RG/icon-128.png" alt="icon-128" class="noselect" border="0" style="width: 18px; height: 18px;">
+      <span style="color:white; font-size: 14px; font-weight:800;" class="noselect" id="pyer"> PYER</span> 
+      <span style="color:rgba(255,255,255,0.6); font-size: 8px; font-weight:400;" class="noselect" id="pyerversion">v.${version}</span>
     </div>
 
     <style>
     #water_pyer {
-      top: 7px !important; 
+      top: 10px !important; 
       padding: 3px;
       padding-left: 5px;
       padding-right: 5px;
@@ -94,8 +95,25 @@ function addWater (version) {
       border: 2px solid rgba(255,255,255,0.325);
       box-shadow: 0px 2px 6px rgba(255,255,255,0.2);
     }
+
+    #water_pyer * {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .noselect {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
     
     </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
     `;
     
     header.insertAdjacentHTML( 'beforeend', str );

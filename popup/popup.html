@@ -1,13 +1,15 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="app">
       <input id="file-input" type="file" accept=".css" name="name" style="display: none;" />
     
-      <m-header><h3>Pyer! <span class="subtitle">엔트리 테마 확장앱</span></h3></m-header>
+      <m-header><h3 id="PYERTITLE">PYER  <span class="subtitle">엔트리 테마 확장앱</span></h3></m-header>
       <div id="contents"> 
         <br />
     
@@ -47,12 +49,12 @@
 
         </div>
       </div>
-      <m-dialog id="github-repo-dialog">Pyer Github Repository로 이동할까요?</m-dialog>
-      <m-dialog id="store-dialog">Pyer 크롬 웹스토어로 이동할까요?</m-dialog>
+      <m-dialog id="github-repo-dialog">PYER Github Repository로 이동할까요?</m-dialog>
+      <m-dialog id="store-dialog">PYER 크롬 웹스토어로 이동할까요?</m-dialog>
       <save-snackbar></save-snackbar>
     
       <div id="footer">
-        <p style='margin: 0; font-weight: 600;'>개발 wy24 도움 tica, jedeop | <span id="version"></span> 버전</p>
+        <p style='margin: 0; font-weight: 600;'>개발 wy24 도움 tica, jedeop | v.<span id="version"></span></p>
       </div>
     </div>
     

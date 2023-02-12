@@ -96,9 +96,20 @@ body {
   padding-left: 12px;
 }
 
+#PYERTITLE {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 800;
+  margin-top: 30px;
+}
+
+.mdc-top-app-bar__title {
+  padding-left: 16px !important;
+}
+
 .subtitle {
   font-size: 15px;
   color: var(--more-white-gray);
+  padding-left: 2px;
 }
 
 .option-box {
