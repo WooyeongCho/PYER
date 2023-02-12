@@ -83,7 +83,7 @@ function addWater (version) {
       padding: 3px;
       padding-left: 5px;
       padding-right: 5px;
-      border-radius: 10px;
+      border-radius: 20px;
       background-color: rgba(255,255,255,0.1);
       border: 2px solid rgba(255,255,255,0.125);
       transition-duration: 0.3s;
